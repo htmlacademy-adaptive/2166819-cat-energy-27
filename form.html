@@ -45,19 +45,19 @@
       <fieldset class="information-group__data data">
         <legend class="visually-hidden">Личные данные вашего котика.</legend>
         <ul class="data__list">
-          <li class="data__item name">
-            <label class="name__label" for="name">имя:*</label>
-            <input class="name__input" type="text" id="name" placeholder="барсик">
+          <li class="data__item">
+            <label class="data__label" for="name">имя:*</label>
+            <input class="data__input" type="text" id="name" placeholder="барсик">
           </li>
 
-          <li class="data__item weight">
-            <label class="weight__label" for="weight">вес (кг):*</label>
-            <input class="weight__input" type="number" id="weight" placeholder="7">
+          <li class="data__item">
+            <label class="data__label" for="weight">вес (кг):*</label>
+            <input class="data__input" type="number" id="weight" placeholder="7">
           </li>
 
-          <li class="data__item age">
-            <label class="age__label" for="age">возраст (лет):</label>
-            <input class="age__input" type="number" id="age" placeholder="7">
+          <li class="data__item">
+            <label class="data__label" for="age">возраст (лет):</label>
+            <input class="data__input" type="number" id="age" placeholder="7">
           </li>
         </ul>
       </fieldset>
@@ -65,24 +65,24 @@
       <fieldset class="information-group__programs programs">
         <legend class="visually-hidden">Выберите подходящую программу для вашего кота.</legend>
         <ul class="programs__list">
-          <li class="programs__item weight-loss">
-            <label class="weight-loss__label">
-              <input class="weight-loss__input" type="radio" checked>
-              <span class="weight-loss__text">похудение</span>
+          <li class="programs__item">
+            <label class="programs__label radio">
+              <input class="radio__input" type="radio" checked>
+              <span class="radio__text">похудение</span>
             </label>
           </li>
 
-          <li class="programs__item weight-gain">
-            <label class="weight-gain__label">
-              <input class="weight-gain__input" type="radio">
-              <span class="weight-gain__text">набор массы</span>
+          <li class="programs__item">
+            <label class="programs__label radio">
+              <input class="radio__input" type="radio">
+              <span class="radio__text">набор массы</span>
             </label>
           </li>
 
-          <li class="programs__item advice">
-            <label class="advice__label">
-              <input class="advice__input" type="radio">
-              <span class="advice__text">не знаю (нужен ваш совет)</span>
+          <li class="programs__item">
+            <label class="programs__label radio">
+              <input class="radio__input" type="radio">
+              <span class="radio__text">не знаю (нужен ваш совет)</span>
             </label>
           </li>
         </ul>
@@ -91,20 +91,20 @@
       <fieldset class="information-group__contacts contacts">
         <legend class="contacts__title">Контактные данные (владельца кота)</legend>
         <ul class="contacts__list">
-          <li class="contacts__item email">
-            <label class="email__label" for="email">e-mail:*</label>
-            <input class="email__input" type="email" id="email" placeholder="kuklachev@gmail.com">
+          <li class="contacts__item">
+            <label class="contacts__label" for="email">e-mail:*</label>
+            <input class="contacts__input" type="email" id="email" placeholder="kuklachev@gmail.com">
           </li>
 
-          <li class="contacts__item tel">
-            <label class="tel__label" for="tel">телефон:*</label>
-            <input class="tel__input" type="tel" id="tel" placeholder="8 (960) 900-60-90">
+          <li class="contacts__item">
+            <label class="contacts__label" for="tel">телефон:*</label>
+            <input class="contacts__input" type="tel" id="tel" placeholder="8 (960) 900-60-90">
           </li>
         </ul>
       </fieldset>
 
       <section class="information-group__comment comment">
-        <h2 class="comment__title">Контактные данные (владельца кота)</h2>
+        <h2 class="comment__title">Комментарий</h2>
         <textarea class="comment__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </section>
 
@@ -143,9 +143,9 @@
 
       <div class="information-group__button">
         <button class="information-group__submit" type="submit">отправить заявку</button>
+        <p class="information-group__text">* — Обязательные поля</p>
       </div>
     </form>
-    <p class="main-container-form__text">* — Обязательные поля</p>
   </main>
 
   <footer class="main-footer">
