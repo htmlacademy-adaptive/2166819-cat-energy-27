@@ -1,0 +1,87 @@
+.nutrition-promo {
+  margin: 0 20px 49px 20px;
+  padding: 0;
+
+  font-family: "Lato-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+}
+
+.nutrition-promo__description {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Oswald-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.nutrition-promo__list {
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.nutrition-promo__item {
+  margin-bottom: 26px;
+  margin-left: 80px;
+  position: relative;
+
+  font-size: 14px;
+  line-height: 18px;
+  list-style-type: none;
+
+  &::before {
+    position: absolute;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &:nth-of-type(1)::after {
+    position: absolute;
+    left: -62px;
+    top: 16px;
+    width: 25px;
+    height: 28px;
+    background-image: url("../img/leaflet.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:nth-of-type(2)::after {
+    left: -63px;
+    top: 16px;
+    width: 26px;
+    height: 29px;
+    background-image: url("../img/boiling-water.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:nth-of-type(3)::after {
+    left: -63px;
+    top: 16px;
+    width: 25px;
+    height: 30px;
+    background-image: url("../img/appliances.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:nth-of-type(4)::after {
+    left: -63px;
+    top: 16px;
+    width: 26px;
+    height: 31px;
+    background-image: url("../img/watch.svg");
+    background-repeat: no-repeat;
+  }
+}
