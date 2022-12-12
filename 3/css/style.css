@@ -1,0 +1,382 @@
+.page-home__body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+.example {
+  margin: 0;
+  padding: 25px 20px 40px 20px;
+  font-family: "Oswald-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #eaeaea;
+}
+.example__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-size: 36px;
+  line-height: 40px;
+}
+.example__description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+.example__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 124px;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+.example__item-title {
+  font-size: 24px;
+  line-height: 24px;
+}
+.example__item-description {
+  position: absolute;
+  width: 87px;
+  top: 47px;
+  right: 19px;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  text-align: center;
+  background-color: #eaeaea;
+}
+.example__expenses {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.html-academy {
+  display: flex;
+  align-items: center;
+  min-height: 78px;
+}
+.html-academy__link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+.html-academy__description {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
+.html-academy__link-icon {
+  color: #666666;
+}
+.logo-cat-energy {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95px;
+  margin: 0;
+  padding: 0;
+}
+.logo-cat-energy__icon {
+  color: #111111;
+}
+.main-container {
+  margin: 0;
+  padding: 0;
+}
+.main-container__preview {
+  font-family: "Oswald-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url("../img/Rectangle-backround-desktop.png"), url("../img/index-background-desktop-cat.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 320px 302px;
+}
+.main-container__preview-title {
+  margin-top: 27px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+.main-container__preview-description {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 29px;
+  padding: 0;
+}
+.main-container__preview-button {
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68b738;
+}
+.main-footer {
+  font-family: "Oswald-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.main-footer__store {
+  height: 474px;
+  margin: 0;
+  padding: 0;
+}
+.main-footer__footer {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+.main-header {
+  margin: 10px 20px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header__logo-mobile {
+  width: 182px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.main-nav__toggle {
+  border: none;
+  background-color: #fff;
+}
+.main-nav__list {
+  display: none;
+}
+.nutrition-programs {
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: "Oswald-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.nutrition-programs__list {
+  margin: 20px;
+  padding: 0;
+}
+.nutrition-programs__item {
+  min-height: 266px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  background-color: #f2f2f2;
+}
+.nutrition-programs__icon {
+  margin: 21px 19px 22px 22px;
+}
+.nutrition-programs__title {
+  margin-top: 30px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+.nutrition-programs__description {
+  margin: 0 33px 42px 20px;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.nutrition-programs__link {
+  margin-left: 20px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+.nutrition-promo {
+  margin: 0 20px 49px 20px;
+  padding: 0;
+  font-family: "Lato-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+}
+.nutrition-promo__description {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+.nutrition-promo__list {
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.nutrition-promo__item {
+  margin-bottom: 26px;
+  margin-left: 80px;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  list-style-type: none;
+}
+.nutrition-promo__item::before {
+  position: absolute;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  content: "";
+}
+.nutrition-promo__item::after {
+  position: absolute;
+  content: "";
+}
+.nutrition-promo__item:nth-of-type(1)::after {
+  position: absolute;
+  left: -62px;
+  top: 16px;
+  width: 25px;
+  height: 28px;
+  background-image: url("../img/leaflet.svg");
+  background-repeat: no-repeat;
+}
+.nutrition-promo__item:nth-of-type(2)::after {
+  left: -63px;
+  top: 16px;
+  width: 26px;
+  height: 29px;
+  background-image: url("../img/boiling-water.svg");
+  background-repeat: no-repeat;
+}
+.nutrition-promo__item:nth-of-type(3)::after {
+  left: -63px;
+  top: 16px;
+  width: 25px;
+  height: 30px;
+  background-image: url("../img/appliances.svg");
+  background-repeat: no-repeat;
+}
+.nutrition-promo__item:nth-of-type(4)::after {
+  left: -63px;
+  top: 16px;
+  width: 26px;
+  height: 31px;
+  background-image: url("../img/watch.svg");
+  background-repeat: no-repeat;
+}
+.social {
+  margin: 0;
+  padding: 23px 98px 23px 95px;
+}
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.social__item {
+  list-style: none;
+}
+.social__link {
+  text-decoration: none;
+}
+.social__link-icon {
+  color: #666666;
+}
+.store__conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 112px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: "Oswald-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.store__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.store__adress {
+  margin: 0;
+}
+.store__adress-map {
+  background-size: cover;
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
