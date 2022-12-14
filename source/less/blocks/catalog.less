@@ -1,5 +1,6 @@
 .catalog__list {
-  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 0;
   padding: 0;
 
   display: flex;
@@ -7,8 +8,24 @@
 }
 
 .catalog__item {
-  display: grid;
-  grid-template-columns: 140px 76px 64px;
+  position: relative;
+  margin-bottom: 25px;
 
-  list-style : none;
+  &::after {
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #ebebeb;
+    content: "";
+  }
+
+  &:last-child::before {
+    position: absolute;
+    background-image: url("../img/plus.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    content: "";
+  }
 }
