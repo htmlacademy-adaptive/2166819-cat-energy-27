@@ -1,12 +1,15 @@
 .store__conteiner {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   min-height: 112px;
   padding-right: 20px;
   padding-left: 20px;
+
+  &--catalog {
+    background-color: @basic-grey;
+  }
 }
 
 .store__description {
@@ -20,8 +23,12 @@
 
 .store__adress {
   margin: 0;
+
+  font-family: @font-face-lato;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .store__adress-map {
-  background-size: cover;
+  display: block;
 }

@@ -41,30 +41,30 @@
 
   <main class="main-container-form">
     <h1 class="main-container-form__title">Подбор программы</h1>
-    <p class="main-container-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <form class="main-container-form__information information-group" action="https://echo.htmlacademy.ru/"
-      method="post">
-      <fieldset class="information-group__data data">
+    <p class="main-container-form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота
+    </p>
+    <form class="main-container-form__information-group" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="main-container-form__information data">
         <legend class="visually-hidden">Личные данные вашего котика.</legend>
         <ul class="data__list">
           <li class="data__item">
             <label class="data__label" for="name">имя:*</label>
-            <input class="data__input" type="text" id="name" placeholder="барсик">
+            <input class="data__input" type="text" id="name" value="барсик" placeholder="Введите имя котика">
           </li>
 
           <li class="data__item">
             <label class="data__label" for="weight">вес (кг):*</label>
-            <input class="data__input" type="number" id="weight" placeholder="7">
+            <input class="data__input" type="number" id="weight" value="7" placeholder="Вес котика">
           </li>
 
           <li class="data__item">
             <label class="data__label" for="age">возраст (лет):</label>
-            <input class="data__input" type="number" id="age" placeholder="7">
+            <input class="data__input" type="number" id="age" value="7" placeholder="Возраст котика">
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="information-group__programs programs">
+      <fieldset class="main-container-form__information programs">
         <legend class="visually-hidden">Выберите подходящую программу для вашего кота.</legend>
         <ul class="programs__list">
           <li class="programs__item">
@@ -90,28 +90,29 @@
         </ul>
       </fieldset>
 
-      <fieldset class="information-group__contacts contacts">
+      <fieldset class="main-container-form__information contacts">
         <legend class="contacts__title">Контактные данные (владельца кота)</legend>
         <ul class="contacts__list">
           <li class="contacts__item">
             <label class="contacts__label" for="email">e-mail:*</label>
-            <input class="contacts__input" type="email" id="email" placeholder="kuklachev@gmail.com">
+            <input class="contacts__input" type="email" id="email" value="kuklachev@gmail.com"
+              placeholder="Введите email">
           </li>
 
           <li class="contacts__item">
             <label class="contacts__label" for="tel">телефон:*</label>
-            <input class="contacts__input" type="tel" id="tel" placeholder="8 (960) 900-60-90">
+            <input class="contacts__input" type="tel" id="tel" value="8 (960) 900-60-90" placeholder="Введите тедефон">
           </li>
         </ul>
       </fieldset>
 
-      <section class="information-group__comment comment">
+      <section class="main-container-form__comment comment">
         <h2 class="comment__title">Комментарий</h2>
         <textarea class="comment__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </section>
 
-      <fieldset class="information-group__additional additional-form">
-        <legend class="visually-hidden">По желанию можете выбрать дополнительные товары.</legend>
+      <fieldset class="main-container-form__information additional-form">
+        <legend class="additional-form__title">Дополнительно</legend>
         <ul class="additional-form__list">
           <li class="additional-form__item">
             <label class="additional-form__label">
@@ -143,16 +144,16 @@
         </ul>
       </fieldset>
 
-      <div class="information-group__button">
-        <button class="information-group__submit" type="submit">отправить заявку</button>
-        <p class="information-group__text">* — Обязательные поля</p>
+      <div class="main-container-form__button">
+        <button class="main-container-form__submit" type="submit">отправить заявку</button>
+        <p class="main-container-form__text">* — Обязательные поля</p>
       </div>
     </form>
   </main>
 
   <footer class="main-footer">
     <section class="main-footer__store store">
-      <div class="store__conteiner">
+      <div class="store__conteiner store__conteiner--catalog">
         <h2 class="visually-hidden">Адрес нашего магазина.</h2>
         <p class="store__description">приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <p class="store__adress">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
