@@ -4,5 +4,44 @@
 }
 
 .main-nav__list {
+  position: relative;
   display: none;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+/*   &--open {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 320px;
+    min-height: 198px;
+
+
+    top: 65px;
+    left: 0;
+    right: 0;
+
+    background-color: #ffffff;
+  } */
+}
+
+.main-nav__item {
+  display: flex;
+  align-items: center;
+
+  min-height: 66px;
+}
+
+.main-nav__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
 }
