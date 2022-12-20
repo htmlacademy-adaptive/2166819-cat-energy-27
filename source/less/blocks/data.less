@@ -1,0 +1,46 @@
+.data {
+  margin: 0 0 52px 0;
+}
+
+.data__list {
+  margin: 0;
+  padding: 0;
+}
+
+.data__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.data__label {
+  margin-right: 13px;
+
+  flex-shrink: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @text-lato;
+}
+
+.data__input {
+  width: 133px;
+
+  flex-grow: 1;
+  padding: 14px 20px;
+  border: 1px solid #e7e7e7;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @text-lato;
+}
