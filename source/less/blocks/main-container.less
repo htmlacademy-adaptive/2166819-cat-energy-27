@@ -52,3 +52,57 @@
 
   background-color: @foundation-color;
 }
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .main-container {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .main-container__preview {
+    position: relative;
+    display: block;
+    min-height: 872px;
+    background-image: none;
+
+    &::after {
+      position: absolute;
+      order: 1;
+      background-image: url("../img/cat-food-tablet.png");
+      background-repeat: no-repeat;
+      width: 709px;
+      height: 609px;
+      top: 174px;
+      content: "";
+    }
+  }
+
+  .main-container__preview-title {
+    margin: 62px 0 41px 87px;
+
+    max-width: 420px;
+
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: start;
+  }
+
+  .main-container__preview-description {
+    margin-left: 87px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  .main-container__img {
+    display: none;
+  }
+
+  .main-container__preview-button {
+    margin-left: 87px;
+  }
+}
