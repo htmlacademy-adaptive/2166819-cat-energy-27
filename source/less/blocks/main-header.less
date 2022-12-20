@@ -1,17 +1,43 @@
 .main-header {
-  margin: 10px 20px 17px;
+  width: 280px;
+  min-height: 65px;
+
+  margin: 0 auto;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.main-header__logo-mobile {
-  width: 191px;
-
+.main-header__logo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
 
+.main-header__link {
   text-decoration: none;
+}
+
+.main-header__icon-mobile {
+  margin-right: 56px;
+}
+
+/* Планшетная версия сайта */
+@media (min-width:@tablet-width) {
+  .main-header {
+    width: 708px;
+    min-height: 76px;
+  }
+
+  .main-header__link:first-child {
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+    width: 174px;
+    height: 52px;
+  }
+
+  .main-header__icon-mobile,
+  .main-header__icon-cat-energy {
+    display: none;
+  }
 }
