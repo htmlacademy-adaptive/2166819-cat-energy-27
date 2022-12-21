@@ -65,17 +65,6 @@
     display: block;
     min-height: 872px;
     background-image: none;
-
-    &::after {
-      position: absolute;
-      order: 1;
-      background-image: url("../img/cat-food-tablet.png");
-      background-repeat: no-repeat;
-      width: 709px;
-      height: 609px;
-      top: 174px;
-      content: "";
-    }
   }
 
   .main-container__preview-title {
@@ -98,11 +87,15 @@
     color: #000000;
   }
 
-  .main-container__img {
-    display: none;
-  }
-
   .main-container__preview-button {
+    position: absolute;
     margin-left: 87px;
+    top: 230px;
+
+    width: 244px;
+    height: 54px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }

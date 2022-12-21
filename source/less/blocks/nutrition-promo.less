@@ -87,3 +87,31 @@
     background-repeat: no-repeat;
   }
 }
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .nutrition-promo {
+    min-height: 736px;
+    margin: 0;
+  }
+
+  .nutrition-promo__description {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .nutrition-promo__list {
+    margin-top: 32px;
+
+    display: grid;
+    grid-template-columns: 354px 354px;
+    grid-row-gap: 37px;
+  }
+
+  .nutrition-promo__item {
+    min-height: 280px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
