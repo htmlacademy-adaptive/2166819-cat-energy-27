@@ -1,3 +1,9 @@
+.store {
+  min-height: 474px;
+  margin: 0;
+  padding: 0;
+}
+
 .store__conteiner {
   display: flex;
   justify-content: space-between;
@@ -29,6 +35,35 @@
   line-height: 20px;
 }
 
-.store__adress-map {
+.store__map {
   display: block;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .store {
+    min-height: 599px;
+  }
+
+  .store__conteiner {
+    width: 568px;
+    min-height: 199px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .store__description,
+  .store__adress {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .store__adress-map {
+    position: relative;
+  }
+
+  .store__map {
+    position: absolute;
+    left: -30px;
+  }
 }

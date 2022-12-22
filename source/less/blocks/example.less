@@ -51,9 +51,9 @@
 
 .example__item-description {
   position: absolute;
-  width: 87px;
+  width: 60px;
   top: 47px;
-  right: 19px;
+  right: 30px;
 
   font-family: @font-face-lato;
   font-size: 12px;
@@ -69,4 +69,56 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .example {
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .example__title {
+    margin-bottom: 63px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__list {
+    justify-content: start;
+  }
+
+  .example__container {
+    margin-right: 42px;
+    width: 160px;
+    height: 72px;
+  }
+
+  .example__item-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__item-description {
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: #ffffff;
+    top: 63px;
+    left: 0;
+  }
+
+  .example__expenses {
+    max-width: 174px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
 }

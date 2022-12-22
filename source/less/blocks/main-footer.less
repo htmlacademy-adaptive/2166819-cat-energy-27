@@ -1,11 +1,21 @@
-.main-footer__store {
-  height: 474px;
-  margin: 0;
-  padding: 0;
+.main-footer {
+  background-color: @basic-grey;
 }
 
 .main-footer__footer {
   margin: 0;
   padding: 0;
-  background-color: @basic-grey;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 147px;
+
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }

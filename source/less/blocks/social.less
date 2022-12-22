@@ -1,12 +1,15 @@
 .social {
   margin: 0;
-  padding: 23px 98px 23px 95px;
 }
 
 .social__list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  align-items: center;
+
+  min-width: 132px;
+
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -20,4 +23,11 @@
 
 .social__link-icon {
   color: #666666;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .social__list {
+    min-width: 120px;
+  }
 }

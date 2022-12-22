@@ -61,8 +61,7 @@
         <li class="nutrition-programs__item">
           <picture>
             <source media="(min-width:768px)" srcset="img/cat-back-min.svg" width="200" height="211">
-            <img class="nutrition-programs__icon" src="img/cat-back-min.svg" alt="Худая кошка" width="50px"
-              height="53px">
+            <img class="nutrition-programs__icon" src="img/cat-back-min.svg" alt="Худая кошка" width="50" height="53">
           </picture>
           <h3 class="nutrition-programs__title">похудение</h3>
           <p class="nutrition-programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -79,8 +78,8 @@
         <li class="nutrition-programs__item">
           <picture>
             <source media="(min-width:768px)" srcset="img/cat-back-max.svg" width="268" height="200">
-            <img class="nutrition-programs__icon" src="img/cat-back-max.svg" alt="Мускулистая кошка" width="67px"
-              height="50px">
+            <img class="nutrition-programs__icon" src="img/cat-back-max.svg" alt="Мускулистая кошка" width="67"
+              height="50">
           </picture>
           <h3 class="nutrition-programs__title">набор массы</h3>
           <p class="nutrition-programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -127,7 +126,7 @@
       <dl class="example__list">
         <div class="example__container">
           <dt class="example__item-title">5 кг</dt>
-          <dd class="example__item-description">снижение<br>веса</dd>
+          <dd class="example__item-description">снижение веса</dd>
         </div>
         <div class="example__container">
           <dt class="example__item-title">60 дней</dt>
@@ -150,18 +149,21 @@
         <img src="img/mobile-cat-after-2x.png" alt="Кот Борис после похудения." width="280" height="256">
       </div>
     </section>
-  </main>
 
-  <footer class="main-footer">
-    <section class="main-footer__store store">
+    <section class="store">
       <div class="store__conteiner">
         <h2 class="visually-hidden">Адрес нашего магазина.</h2>
         <p class="store__description">приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <p class="store__adress">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
-      <img class="store__adress-map" src="img/map.png" alt="Карта" width="320" height="362">
+      <picture class="store__adress-map">
+        <source media="(min-width:768px)" srcset="img/map-tablet.jpg" width="768" height="400">
+        <img class="store__map" src="img/map.png" alt="Карта" width="320" height="362">
+      </picture>
     </section>
+  </main>
 
+  <footer class="main-footer">
     <section class="main-footer__footer logo-cat-energy">
       <h2 class="visually-hidden">CAT ENERGY.</h2>
       <a class="logo-cat-energy__link" href="index.html">

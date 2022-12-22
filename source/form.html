@@ -151,18 +151,21 @@
         <p class="main-container-form__text">* — Обязательные поля</p>
       </div>
     </form>
-  </main>
 
-  <footer class="main-footer">
-    <section class="main-footer__store store">
-      <div class="store__conteiner store__conteiner--catalog">
+    <section class="store">
+      <div class="store__conteiner">
         <h2 class="visually-hidden">Адрес нашего магазина.</h2>
         <p class="store__description">приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <p class="store__adress">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
-      <img class="store__adress-map" src="img/map.png" alt="Карта" width="320" height="362">
+      <picture class="store__adress-map">
+        <source media="(min-width:768px)" srcset="img/map-tablet.jpg" width="768" height="400">
+        <img class="store__map" src="img/map.png" alt="Карта" width="320" height="362">
+      </picture>
     </section>
+  </main>
 
+  <footer class="main-footer">
     <section class="main-footer__footer logo-cat-energy">
       <h2 class="visually-hidden">CAT ENERGY.</h2>
       <a class="logo-cat-energy__link" href="index.html">
