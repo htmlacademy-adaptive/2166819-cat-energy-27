@@ -63,7 +63,7 @@
   .main-container__preview {
     position: relative;
     display: block;
-    min-height: 872px;
+    height: 872px;
     background-image: none;
   }
 
@@ -81,6 +81,7 @@
 
   .main-container__preview-description {
     margin-left: 87px;
+    margin-bottom: 49px;
 
     font-size: 20px;
     line-height: 20px;
@@ -89,6 +90,7 @@
 
   .main-container__preview-button {
     position: absolute;
+    margin-top: 0;
     margin-left: 87px;
     top: 230px;
 
@@ -97,5 +99,31 @@
 
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .main-container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .main-container__preview {
+    height: 585px;
+  }
+
+  .main-container__preview-title {
+    margin: 114px 0 40px 80px;
+  }
+
+  .main-container__preview-description {
+    margin-bottom: 52px;
+  }
+
+  .main-container__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
