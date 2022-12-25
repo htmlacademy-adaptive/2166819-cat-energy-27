@@ -3,6 +3,7 @@
 }
 
 .contacts__title {
+  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
 }
@@ -41,7 +42,31 @@
 
   padding: 14px 15px;
   border: 1px solid #cdcdcd;
+
   font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
   color: @text-lato;
   text-transform: uppercase;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    margin-left: 69px;
+    padding: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .contacts__list {
+    margin: 76px 66px 65px 70px;
+  }
+
+  .contacts__label,
+  .contacts__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

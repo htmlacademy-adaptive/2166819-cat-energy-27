@@ -7,6 +7,7 @@
   margin-top: 27px;
   margin-bottom: 37px;
 
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }
@@ -58,4 +59,27 @@
   font-family: @font-face-lato;
   font-size: 14px;
   line-height: 16px;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .main-container-form {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .main-container-form__title {
+    margin: 65px auto 54px 69px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-container-form__description {
+    margin-left: 70px;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

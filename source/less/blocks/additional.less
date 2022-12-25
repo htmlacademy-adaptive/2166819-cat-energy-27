@@ -2,6 +2,7 @@
   margin-top: 50px;
   margin-bottom: 49px;
 
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
 }
@@ -12,4 +13,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .additional {
+    margin-bottom: 36px;
+  }
+
+  .additional__title {
+    margin: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional__list {
+    margin-top: 80px;
+    flex-direction: column;
+  }
 }

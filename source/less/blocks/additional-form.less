@@ -26,3 +26,35 @@
     margin: 0;
   }
 }
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .additional-form {
+    margin: 0 0 59px 0;
+  }
+
+  .additional-form__title {
+    margin-left: 70px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional-form__list {
+    width: 533px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .additional-form__item {
+    min-width: 265px;
+  }
+
+  .additional-form__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

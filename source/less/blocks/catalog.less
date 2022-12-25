@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 
-.catalog__item {
+/* .catalog__item {
   position: relative;
   margin-bottom: 25px;
 
@@ -27,5 +27,21 @@
     height: 30px;
     top: 25px;
     content: "";
+  }
+} */
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .catalog {
+    margin-bottom: 68px;
+  }
+
+  .catalog__list {
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-column-gap: 60px;
+    grid-row-gap: 141px;
   }
 }
