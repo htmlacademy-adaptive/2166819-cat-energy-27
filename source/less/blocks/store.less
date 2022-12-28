@@ -1,15 +1,11 @@
-.store {
-  min-height: 474px;
-  margin: 0;
-  padding: 0;
-}
-
 .store__conteiner {
+  min-height: 112px;
+
+  margin: 0 20px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  min-height: 112px;
 }
 
 .store__description {
@@ -30,11 +26,13 @@
 }
 
 .store__adress-map {
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .store__map {
   display: block;
+
 }
 
 /* Планшетная версия сайта */
@@ -54,10 +52,5 @@
   .store__adress {
     font-size: 20px;
     line-height: 26px;
-  }
-
-  .store__map {
-    position: absolute;
-    left: -30px;
   }
 }

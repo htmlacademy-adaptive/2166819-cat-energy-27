@@ -9,8 +9,8 @@
 }
 
 .nutrition-promo__description {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 40px;
 
   font-family: @font-face-oswald;
   font-size: 36px;
@@ -21,70 +21,54 @@
 .nutrition-promo__list {
   position: relative;
 
-  margin-top: 40px;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
 }
 
 .nutrition-promo__item {
-  margin-bottom: 26px;
-  margin-left: 80px;
   position: relative;
+
+  min-height: 60px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
 
   font-size: 14px;
   line-height: 18px;
   list-style-type: none;
+}
 
-  &::before {
-    position: absolute;
-    left: -80px;
-    width: 60px;
-    height: 60px;
-    background-color: @foundation-color;
+.nutrition-promo__decor {
+  min-width: 60px;
+  min-height: 60px;
 
-    content: "";
-  }
+  margin-right: 20px;
 
-  &::after {
-    position: absolute;
-    content: "";
-  }
+  background-color: @foundation-color;
 
-  &:nth-of-type(1)::after {
-    position: absolute;
-    left: -62px;
-    top: 16px;
-    width: 25px;
-    height: 28px;
-    background-image: url("../img/leaflet.svg");
+  &--leaflet {
+    background-image: url(../img/leaflet.svg);
     background-repeat: no-repeat;
+    background-position: center;
   }
 
-  &:nth-of-type(2)::after {
-    left: -63px;
-    top: 16px;
-    width: 26px;
-    height: 29px;
-    background-image: url("../img/boiling-water.svg");
+  &--boiling-water {
+    background-image: url(../img/boiling-water.svg);
     background-repeat: no-repeat;
+    background-position: center;
   }
 
-  &:nth-of-type(3)::after {
-    left: -63px;
-    top: 16px;
-    width: 25px;
-    height: 30px;
-    background-image: url("../img/appliances.svg");
+  &--сutlery {
+    background-image: url(../img/сutlery.svg);
     background-repeat: no-repeat;
+    background-position: center;
   }
 
-  &:nth-of-type(4)::after {
-    left: -63px;
-    top: 16px;
-    width: 26px;
-    height: 31px;
-    background-image: url("../img/watch.svg");
+  &---watch {
+    background-image: url(../img/watch.svg);
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
