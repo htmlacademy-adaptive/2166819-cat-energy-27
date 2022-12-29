@@ -78,28 +78,37 @@
 
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
-  .nutrition-promo {
-    min-height: 736px;
-    margin: 0;
-  }
-
   .nutrition-promo__description {
+    margin-left: 30px;
+
     font-size: 60px;
     line-height: 60px;
   }
 
   .nutrition-promo__list {
-    margin-top: 32px;
+    margin: 32px 30px 0 30px;
 
-    display: grid;
-    grid-template-columns: 354px 354px;
-    grid-row-gap: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
   }
 
   .nutrition-promo__item {
+    max-width: 250px;
     min-height: 280px;
+
+    flex-wrap: wrap;
+    justify-content: start;
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .nutrition-promo__decor {
+    min-width: 80px;
+    min-height: 80px;
+
+    margin-bottom: 31px;
   }
 }
