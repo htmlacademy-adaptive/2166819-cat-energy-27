@@ -78,6 +78,12 @@
 
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
+  .nutrition-promo {
+    max-width: 768px;
+    margin-left: 0;
+    margin-bottom: 90px;
+  }
+
   .nutrition-promo__description {
     margin-left: 30px;
 
@@ -86,20 +92,20 @@
   }
 
   .nutrition-promo__list {
-    margin: 32px 30px 0 30px;
+    margin: 32px 100px 0 30px;
 
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-
+    justify-content: space-between;
   }
 
   .nutrition-promo__item {
     max-width: 250px;
-    min-height: 280px;
+
+    margin-bottom: 37px;
 
     flex-wrap: wrap;
-    justify-content: start;
+    align-items: flex-start;
 
     font-size: 16px;
     line-height: 24px;
@@ -110,5 +116,27 @@
     min-height: 80px;
 
     margin-bottom: 31px;
+  }
+
+  .nutrition-promo__text {
+    margin-bottom: 57px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .nutrition-promo {
+    max-width: none;
+
+    margin-right: 0;
+    margin-bottom: 69px;
+  }
+
+  .nutrition-promo__description {
+    margin-left: 110px;
+  }
+
+  .nutrition-promo__list {
+    margin: 72px 106px 0 110px;
   }
 }

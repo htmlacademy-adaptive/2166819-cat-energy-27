@@ -1,5 +1,5 @@
 .main-header {
-  width: 280px;
+  max-width: 280px;
   min-height: 65px;
 
   margin: 0 auto;
@@ -25,8 +25,10 @@
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
   .main-header {
-    width: 708px;
     min-height: 76px;
+    max-width: none;
+
+    margin: 0 30px;
   }
 
   .main-header__link:first-child {
@@ -45,7 +47,8 @@
 /* Десктопная версия сайта */
 @media (min-width: @desktop-width) {
   .main-header {
-    width: 1220px;
     min-height: 107px;
+
+    margin: 0 110px;
   }
 }

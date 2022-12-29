@@ -84,6 +84,7 @@
   }
 
   .example__title {
+    margin-left: 31px;
     margin-bottom: 63px;
 
     font-size: 60px;
@@ -91,9 +92,18 @@
   }
 
   .example__description {
+    margin-left: 31px;
     margin-bottom: 54px;
+
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .example__wrapper {
+    margin: 0 31px;
+
+    display: flex;
+    justify-content: space-between;
   }
 
   .example__list {
@@ -104,6 +114,10 @@
     margin-right: 42px;
     width: 160px;
     height: 72px;
+
+    &:nth-of-type(1) {
+      margin-right: 42px;
+    }
   }
 
   .example__item-title {
@@ -125,5 +139,27 @@
     font-size: 20px;
     line-height: 20px;
     text-align: end;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .example__title {
+    margin-left: 110px;
+    margin-bottom: 146px;
+  }
+
+  .example__description {
+    max-width: 436px;
+
+    margin-left: 110px;
+    margin-bottom: 69px;
+  }
+
+  .example__wrapper {
+    max-width: 436px;
+    margin-left: 110px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

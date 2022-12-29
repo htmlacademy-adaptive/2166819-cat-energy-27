@@ -70,9 +70,26 @@
 
   .nutrition-programs__icon {
     position: absolute;
-    margin: 0;
-    top: 0;
-    right: 0;
+
+    &--cat-min {
+      width: 200px;
+      height: 211px;
+
+      margin: 0;
+
+      top: 81px;
+      right: 62px;
+    }
+
+    &--cat-max {
+      width: 268px;
+      height: 200px;
+
+      margin: 0;
+
+      top: 91px;
+      right: 28px;
+    }
   }
 
   .nutrition-programs__title {
@@ -95,5 +112,55 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .nutrition-programs {
+    margin: 0 110px 71px 110px;
+  }
+
+  .nutrition-programs__list {
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nutrition-programs__item {
+    width: 570px;
+    min-height: 374px;
+    margin: 0;
+  }
+
+  .nutrition-programs__icon {
+    &--cat-min {
+      width: 100px;
+      height: 106px;
+
+      top: 41px;
+      left: 52px;
+    }
+
+    &--cat-max {
+      width: 134px;
+      height: 100px;
+
+      top: 47px;
+      left: 33px;
+    }
+  }
+
+  .nutrition-programs__title {
+    margin: 77px 0 73px 214px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .nutrition-programs__description {
+    max-width: 457px;
+    margin: 0 0 27px 52px;
   }
 }

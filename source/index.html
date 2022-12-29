@@ -46,10 +46,9 @@
       <h1 class="main-container__preview-title">Функциональное питание для котов</h1>
       <p class="main-container__preview-description">Занялся собой? Займись котом!</p>
       <picture class="main-container__picture">
-        <source media="(min-width:768px)" srcset="img/cat-food-tablet.png" width="709" height="609">
         <source media="(min-width:1440px)" srcset="img/cat-food-desktop.png" width="552" height="499">
-        <img src="img/cat-food.png" alt="Баночка с правильным пианием для котов."
-          width="280" height="270">
+        <source media="(min-width:768px)" srcset="img/cat-food-tablet.png" width="709" height="609">
+        <img src="img/cat-food.png" alt="Баночка с правильным пианием для котов." width="280" height="270">
       </picture>
       <a class="main-container__preview-button program-link" href="form.html">подобрать программу</a>
     </section>
@@ -58,10 +57,8 @@
       <h2 class="visually-hidden">Выбор программы питания для вашего кота.</h2>
       <ul class="nutrition-programs__list">
         <li class="nutrition-programs__item">
-          <picture>
-            <source media="(min-width:768px)" srcset="img/cat-back-min.svg" width="200" height="211">
-            <img class="nutrition-programs__icon" src="img/cat-back-min.svg" alt="Худая кошка" width="50" height="53">
-          </picture>
+          <img class="nutrition-programs__icon nutrition-programs__icon--cat-min" src="img/cat-back-min.svg"
+            alt="Худая кошка" width="50" height="53">
           <h3 class="nutrition-programs__title">похудение</h3>
           <p class="nutrition-programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по
             деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -75,11 +72,8 @@
           </a>
         </li>
         <li class="nutrition-programs__item">
-          <picture>
-            <source media="(min-width:768px)" srcset="img/cat-back-max.svg" width="268" height="200">
-            <img class="nutrition-programs__icon" src="img/cat-back-max.svg" alt="Мускулистая кошка" width="67"
-              height="50">
-          </picture>
+          <img class="nutrition-programs__icon nutrition-programs__icon--cat-max" src="img/cat-back-max.svg"
+            alt="Мускулистая кошка" width="67" height="50">
           <h3 class="nutrition-programs__title">набор массы</h3>
           <p class="nutrition-programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
             Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -132,20 +126,22 @@
         Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
         в
-        день.</p>
+        день.
+      </p>
+      <div class="example__wrapper">
+        <dl class="example__list">
+          <div class="example__container">
+            <dt class="example__item-title">5 кг</dt>
+            <dd class="example__item-description">снижение веса</dd>
+          </div>
+          <div class="example__container">
+            <dt class="example__item-title">60 дней</dt>
+            <dd class="example__item-description">затрачено времени</dd>
+          </div>
+        </dl>
+        <p class="example__expenses">затраты на питание: 15 000 руб.</p>
+      </div>
 
-      <dl class="example__list">
-        <div class="example__container">
-          <dt class="example__item-title">5 кг</dt>
-          <dd class="example__item-description">снижение веса</dd>
-        </div>
-        <div class="example__container">
-          <dt class="example__item-title">60 дней</dt>
-          <dd class="example__item-description">затрачено времени</dd>
-        </div>
-      </dl>
-
-      <p class="example__expenses">затраты на питание: 15 000 руб.</p>
       <div class="compare">
         <img src="img/mobile-cat-before-2x.png" alt="Кот Борис до похудения." width="280" height="256">
         <button class="compare__button" type="button">
@@ -168,6 +164,7 @@
         <p class="store__adress">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
       <picture class="store__adress-map">
+        <source media="(min-width:1440px)" srcset="img/map-desktop.jpg" width="1440" height="400">
         <source media="(min-width:768px)" srcset="img/map-tablet.jpg" width="768" height="400">
         <img class="store__map" src="img/map.png" alt="Карта" width="320" height="362">
       </picture>

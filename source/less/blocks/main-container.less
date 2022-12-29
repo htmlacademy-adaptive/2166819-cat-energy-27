@@ -69,14 +69,12 @@
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
   .main-container {
-    min-width: 708px;
     margin: 0 auto;
   }
 
   .main-container__preview {
     position: relative;
     display: block;
-    height: 872px;
     background-image: none;
   }
 
@@ -123,20 +121,28 @@
 /* Десктопная версия сайта */
 @media (min-width: @desktop-width) {
   .main-container__preview {
-    height: 585px;
+    min-height: 471px;
+
+    margin-bottom: 82px;
   }
 
   .main-container__preview-title {
-    margin: 114px 0 40px 80px;
+    margin: 114px 0 40px 190px;
   }
 
   .main-container__preview-description {
     margin-bottom: 52px;
+    margin-left: 190px;
   }
 
   .main-container__picture {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -82px;
+    right: -558px;
+    text-align: start;
+  }
+
+  .main-container__preview-button {
+    margin-left: 190px;
   }
 }
