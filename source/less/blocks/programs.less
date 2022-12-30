@@ -1,5 +1,5 @@
 .programs {
-  margin: 0 0 51px 0;
+  margin: 0 20px 51px 65px;
 }
 
 .programs__list {
@@ -23,12 +23,27 @@
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
   .programs {
-    width: 630px;
-    margin: 72px auto 75px;
+    margin: 0 67px 75px 71px;
+
+    border: 1px solid #e7e7e7;
   }
 
   .programs__item {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .programs__list {
+    margin: 30px 0 30px 87px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .programs {
+    min-width: 570px;
+    margin: 0;
+
+    border: 1px solid #e7e7e7;
   }
 }

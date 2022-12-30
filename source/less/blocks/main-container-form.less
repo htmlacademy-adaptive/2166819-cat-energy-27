@@ -1,11 +1,9 @@
 .main-container-form {
-  width: 280px;
   margin: 0 auto;
 }
 
 .main-container-form__title {
-  margin-top: 27px;
-  margin-bottom: 37px;
+  margin: 27px 0 37px 20px;
 
   font-weight: 400;
   font-size: 36px;
@@ -13,8 +11,8 @@
 }
 
 .main-container-form__description {
-  margin-top: 0;
-  margin-bottom: 39px;
+  margin: 0 0 39px 20px;
+
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -63,13 +61,8 @@
 
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
-  .main-container-form {
-    width: 768px;
-    margin: 0 auto;
-  }
-
   .main-container-form__title {
-    margin: 65px auto 54px 69px;
+    margin: 65px auto 54px 70px;
 
     font-size: 60px;
     line-height: 60px;
@@ -81,5 +74,51 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .main-container-form__button {
+    justify-content: start;
+
+    margin-left: 70px;
+    margin-bottom: 72px;
+  }
+
+  .main-container-form__submit {
+    width: 282px;
+    height: 52px;
+
+    margin-right: 64px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .main-container-form__title {
+    margin: 77px 110px 56px 110px;
+  }
+
+  .main-container-form__description {
+    margin-left: 110px;
+    margin-bottom: 66px;
+  }
+
+  .main-container-form__wrapper {
+    margin: 0 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-container-form__button {
+    justify-content: start;
+
+    margin-left: 110px;
+    margin-bottom: 82px;
+  }
+
+  .main-container-form__submit {
+    width: 568px;
+    height: 52px;
+
+    margin-right: 82px;
   }
 }

@@ -1,5 +1,5 @@
 .data {
-  margin: 0 0 52px 0;
+  margin: 0 20px 52px;
 }
 
 .data__list {
@@ -48,13 +48,20 @@
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
   .data {
-    width: 630px;
-    margin: 66px auto 71px;
+    margin: 66px 67px 72px 71px;
   }
 
   .data__label,
   .data__input {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .data {
+    min-width: 570px;
+    margin: 0;
   }
 }

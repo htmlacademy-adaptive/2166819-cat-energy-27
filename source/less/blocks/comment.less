@@ -1,5 +1,5 @@
 .comment {
-  margin-bottom: 23px;
+  margin: 0 20px 23px;
 }
 
 .comment__title {
@@ -10,10 +10,15 @@
   line-height: 26px;
 }
 
+.comment__wrapper {
+  max-width: 100%;
+}
+
 .comment__text {
-  width: 253px;
+  width: 100%;
+  box-sizing: border-box;
   min-height: 131px;
-  flex-grow: 1;
+
   padding: 10px 12px 10px 15px;
 
   border: 1px solid #e7e7e7;
@@ -23,16 +28,17 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @text-lato;
+
+  resize: none;
 }
 
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
   .comment {
-    margin-bottom: 65px;
+    margin: 0 67px 65px 70px;
   }
 
   .comment__title {
-    margin-left: 69px;
     margin-bottom: 76px;
 
     font-size: 36px;
@@ -40,12 +46,21 @@
   }
 
   .comment__text {
-    width: 593px;
     height: 154px;
-    margin-left: 70px;
+    width: none;
+
+    margin-right: 67px;
+
     padding: 10px 19px;
 
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .comment {
+    margin: 0 110px 67px 110px;
   }
 }

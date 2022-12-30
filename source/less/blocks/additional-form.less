@@ -1,5 +1,5 @@
 .additional-form {
-  margin: 0 0 40px 0;
+  margin: 0 20px 40px;
 }
 
 .additional-form__title {
@@ -56,5 +56,22 @@
   .additional-form__text {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .additional-form__title {
+    margin-left: 110px;
+    margin-bottom: 62px;
+  }
+
+  .additional-form__list {
+    width: auto;
+
+    margin: 0 110px;
+
+    display: flex;
+    justify-content: start;
   }
 }
