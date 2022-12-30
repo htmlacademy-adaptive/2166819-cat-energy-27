@@ -1,13 +1,15 @@
 .gift {
+  height: 290px;
+  margin-bottom: 35px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
-  margin-bottom: 35px;
-  height: 290px;
-
-  background-image: url("../img/Rectangle-backround-desktop.png"), url("../img/cat-in-bag.jpg");
-  background-repeat: no-repeat, no-repeat;
+  background: linear-gradient(#68b738d9, #68b738d9), url("../img/cat-in-bag.jpg");
+  background-size: 280px 290px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .gift__description {
@@ -27,9 +29,10 @@
 
     margin-bottom: 76px;
 
-    background-image: url("../img/Rectangle-backround-desktop.png"), url("../img/cat-in-bag-tablet.jpg");
-    background-repeat: no-repeat, no-repeat;
+    background: linear-gradient(#68b738d9, #68b738d9), url("../img/cat-in-bag-tablet.jpg");
+    background-repeat: no-repeat;
     background-size: 708px 200px;
+    background-position: center;
   }
 
   .gift__description {
@@ -37,4 +40,9 @@
 
     text-align: start;
   }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+
 }
