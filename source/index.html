@@ -12,10 +12,13 @@
   <header class="main-header">
     <div class="main-header__logo">
       <a class="main-header__link" href="index.html">
-        <img class="main-header__icon-mobile" src="img/logo-mobile.svg" alt="Логотип сайта CAT ENERGY." width="34"
-          height="38">
-        <img class="main-header__icon-cat-energy" src="img/logo-cat-energy.svg" alt="Сайт CAT ENERGY." width="101"
-          height="18">
+        <picture>
+          <source media="(min-width:768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+          <img class="main-header__icon-mobile" src="img/logo-mobile.svg" alt="Логотип сайта CAT ENERGY." width="34"
+            height="38">
+          <img class="main-header__icon-cat-energy" src="img/logo-cat-energy.svg" alt="Сайт CAT ENERGY." width="101"
+            height="18">
+        </picture>
       </a>
     </div>
 
@@ -44,7 +47,8 @@
       <picture class="main-container__picture">
         <source media="(min-width:1440px)" srcset="img/cat-food-desktop.png" width="552" height="499">
         <source media="(min-width:768px)" srcset="img/cat-food-tablet.png" width="709" height="609">
-        <img src="img/cat-food.png" alt="Баночка с правильным пианием для котов." width="280" height="270">
+        <img class="main-container__img" src="img/cat-food.png" alt="Баночка с правильным пианием для котов."
+          width="280" height="270">
       </picture>
       <a class="main-container__preview-button program-link" href="form.html">подобрать программу</a>
     </section>
@@ -53,8 +57,12 @@
       <h2 class="visually-hidden">Выбор программы питания для вашего кота.</h2>
       <ul class="nutrition-programs__list">
         <li class="nutrition-programs__item">
-          <img class="nutrition-programs__icon nutrition-programs__icon--cat-min" src="img/cat-back-min.svg"
-            alt="Худая кошка" width="50" height="53">
+          <picture>
+            <source media="(min-width:1440px)" srcset="" width="" height="">
+            <source media="(min-width:768px)" srcset="" width="" height="">
+            <img class="nutrition-programs__icon nutrition-programs__icon--cat-min" src="" alt="Худая кошка"
+              width="50" height="53">
+          </picture>
           <h3 class="nutrition-programs__title">похудение</h3>
           <p class="nutrition-programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по
             деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -68,7 +76,7 @@
           </a>
         </li>
         <li class="nutrition-programs__item">
-          <img class="nutrition-programs__icon nutrition-programs__icon--cat-max" src="img/cat-back-max.svg"
+          <img class="nutrition-programs__icon nutrition-programs__icon--cat-max" src="img/cat-black-max.svg"
             alt="Мускулистая кошка" width="67" height="50">
           <h3 class="nutrition-programs__title">набор массы</h3>
           <p class="nutrition-programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -91,25 +99,21 @@
       <ul class="nutrition-promo__list">
         <li class="nutrition-promo__item">
           <span class="nutrition-promo__decor nutrition-promo__decor--leaflet">
-            <p class="visually-hidden">Декоративный элмент</p>
           </span>
           <p class="nutrition-promo__text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
         <li class="nutrition-promo__item">
           <span class="nutrition-promo__decor nutrition-promo__decor--boiling-water">
-            <p class="visually-hidden">Декоративный элмент</p>
           </span>
           <p class="nutrition-promo__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
         <li class="nutrition-promo__item">
           <span class="nutrition-promo__decor nutrition-promo__decor--knife-and-fork">
-            <p class="visually-hidden">Декоративный элмент</p>
           </span>
           <p class="nutrition-promo__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="nutrition-promo__item">
           <span class="nutrition-promo__decor nutrition-promo__decor--watch">
-            <p class="visually-hidden">Декоративный элмент</p>
           </span>
           <p class="nutrition-promo__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>

@@ -3,6 +3,7 @@
   padding: 0;
   border: none;
   background-color: @basic-white;
+  display: block;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -76,14 +77,26 @@
   }
 
   .main-nav__list {
+    width: 440px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
 
-    width: 440px;
+    list-style-type: none;
   }
 
   .main-nav__item {
+    width: auto;
+    padding: 0;
+
+    border: none;
+
+    text-align: start;
     align-items: flex-end;
+
+    &:last-child {
+      border: none;
+    }
   }
 
   .main-nav__link {
