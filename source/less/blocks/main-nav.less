@@ -1,23 +1,56 @@
 .main-nav__toggle {
+  margin: 0;
+  padding: 0;
   border: none;
   background-color: @basic-white;
 }
 
-.main-nav__list {
-  position: relative;
-  display: none;
+.main-nav--opened .main-nav__toggle {
+  background-image: url(../img/mobile-menu-open.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 18px;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url(../img/mobile-menu-closed.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.main-nav--closed .main-nav__list {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
 
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 
   list-style-type: none;
 }
 
 .main-nav__item {
-  display: flex;
-  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 22px 0 24px;
 
-  min-height: 66px;
+  background-color: #ffffff;
+
+
+  border-top: 1px solid #E6E6E6;
+
+  text-align: center;
+
+  &:last-child {
+    border-bottom: 1px solid #E6E6E6;
+  }
 }
 
 .main-nav__link {
@@ -28,6 +61,13 @@
   text-transform: uppercase;
   color: #000000;
 }
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--opened .main-nav__list {
+    display: none;
+  }
+}
+
 
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
