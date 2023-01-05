@@ -6,8 +6,8 @@
   margin-bottom: 20px;
 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   background: linear-gradient(#68b738d9, #68b738d9), url("../img/index-background-desktop-cat.jpg"), linear-gradient(#0e140ad9, #264614d9, #0e140ad9);
   background-repeat: no-repeat;
@@ -28,7 +28,6 @@
 }
 
 .main-container__preview-description {
-  width: 100%;
   margin-top: 0;
   margin-bottom: 29px;
   padding: 0;
@@ -41,7 +40,7 @@
 }
 
 .main-container__picture {
-  width: 100%;
+  width: auto;
   text-align: center;
   margin-bottom: 3px;
 }
@@ -53,7 +52,7 @@
 
 .main-container__preview-button {
   min-height: 40px;
-  width: 100%;
+  min-width: 280px;
 
   margin-right: 20px;
   margin-left: 20px;
@@ -150,8 +149,8 @@
 
   .main-container__picture {
     position: absolute;
-    top: -82px;
-    right: -558px;
+    top: -80px;
+    left: 558px;
     text-align: start;
   }
 
