@@ -53,14 +53,14 @@
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
   .additional-product {
-    height: 139px;
+    height: 137px;
     width: 708px;
 
     margin: 0 auto;
 
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: 70px auto;
 
     border: 1px solid #cdcdcd;
 
@@ -78,7 +78,9 @@
 
   .additional-product__list {
     grid-column: 3 / 4;
+    margin-top: 28px;
     margin-right: 40px;
+    justify-content: end;
   }
 
   .additional-product__item {
@@ -87,6 +89,7 @@
   }
 
   .additional-product__price {
+    margin-left: 50px;
     font-size: 16px;
     line-height: 20px;
   }
