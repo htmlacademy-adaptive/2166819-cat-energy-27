@@ -1,8 +1,9 @@
 .contacts {
-  margin: 0 20px 24px;
+  margin: 0 20px 7px;
 }
 
 .contacts__title {
+  padding: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
@@ -24,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   &:last-child {
     margin: 0;
@@ -36,11 +37,11 @@
 }
 
 .contacts__input {
-  width: 172px;
+  width: 171px;
 
   flex-grow: 1;
 
-  padding: 14px 15px;
+  padding: 13px 15px;
   border: 1px solid #cdcdcd;
 
   font-family: inherit;
@@ -57,7 +58,7 @@
   }
 
   .contacts__title {
-    margin-bottom: 76px;
+    margin-bottom: 75px;
 
     font-size: 36px;
     line-height: 36px;
@@ -67,8 +68,22 @@
     margin: 0;
   }
 
-  .contacts__label,
+  .contacts__item {
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
+
   .contacts__input {
+    padding: 10px 19px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contacts__label {
+    margin-right: 21px;
+    margin-top: 10px;
+
     font-size: 20px;
     line-height: 30px;
   }
@@ -77,7 +92,7 @@
 /* Десктопная версия сайта */
 @media (min-width: @desktop-width) {
   .contacts {
-    margin: 69px 110px 67px 110px;
+    margin: 69px 110px 47px 110px;
   }
 
   .contacts__list {

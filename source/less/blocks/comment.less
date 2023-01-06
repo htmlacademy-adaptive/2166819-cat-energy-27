@@ -1,5 +1,5 @@
 .comment {
-  margin: 0 20px 23px;
+  margin: 0 20px 18px;
 }
 
 .comment__title {
@@ -17,9 +17,9 @@
 .comment__text {
   width: 100%;
   box-sizing: border-box;
-  min-height: 131px;
+  min-height: 150px;
 
-  padding: 10px 12px 10px 15px;
+  padding: 8px 12px 10px 15px;
 
   border: 1px solid #e7e7e7;
 
@@ -35,7 +35,7 @@
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
   .comment {
-    margin: 0 67px 65px 70px;
+    margin: 0 67px 60px 70px;
   }
 
   .comment__title {
@@ -46,11 +46,8 @@
   }
 
   .comment__text {
-    height: 154px;
-    width: none;
-
+    min-height: 174px;
     margin-right: 67px;
-
     padding: 10px 19px;
 
     font-size: 20px;
@@ -61,6 +58,6 @@
 /* Десктопная версия сайта */
 @media (min-width: @desktop-width) {
   .comment {
-    margin: 0 110px 67px 110px;
+    margin: 0 110px 62px 110px;
   }
 }
