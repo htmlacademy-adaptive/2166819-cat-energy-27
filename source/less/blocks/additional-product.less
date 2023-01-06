@@ -110,8 +110,8 @@
 /* Десктопная версия сайта */
 @media (min-width: @desktop-width) {
   .additional-product {
-    width: 985px;
-    height: 72px;
+    width: 895px;
+    height: 71px;
 
     margin: 0 110px;
 
@@ -120,6 +120,11 @@
     justify-content: space-between;
 
     border: none;
+    border-top: 1px solid #CDCDCD;
+
+    &:last-child {
+      border-bottom: 1px solid #CDCDCD;
+    }
   }
 
   .additional-product__title {
@@ -127,8 +132,14 @@
     flex-grow: 1;
   }
 
+  .additional-product__list {
+    width: 285px;
+    margin-top: 26px;
+    justify-content: space-between;
+  }
+
   .additional-product__button {
     width: 244px;
-    margin: 0;
+    margin-top: 2px;
   }
 }

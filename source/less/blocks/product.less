@@ -221,11 +221,40 @@
 @media (min-width: @desktop-width) {
   .product {
     width: 245px;
+    margin-bottom: 64px;
+
+    background-image: linear-gradient(#ffffff 80px, #f2f2f2 80px 430px);
+
+    &--more {
+      width: 241px;
+      margin-top: 80px;
+
+      background-image: linear-gradient(#ffffff, #ffffff);
+
+      border: 2px solid #f2f2f2;
+    }
   }
 
   .product__title {
+    margin: 36px 0 26px 5px;
+
     font-size: 20px;
     line-height: 21px;
+
+    &--more {
+      margin-top: 159px;
+      margin-left: 0;
+    }
+  }
+
+  .product__description {
+    &--more {
+      margin-bottom: 85px;
+    }
+  }
+
+  .product__list {
+    margin-bottom: 25px;
   }
 
   .product__conteiner {
@@ -234,5 +263,9 @@
 
   .product__button {
     width: 168px;
+
+    &--more {
+      min-width: 169px;
+    }
   }
 }

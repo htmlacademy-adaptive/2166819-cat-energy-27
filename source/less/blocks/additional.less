@@ -36,12 +36,23 @@
 
 /* Десктопная версия сайта */
 @media (min-width: @desktop-width) {
+  .additional__wrapper {
+    margin-bottom: 86px;
+  }
+
+  .additional__wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
   .additional__title {
     margin-left: 110px;
+    margin-top: 10px;
+    margin-bottom: 80px;
   }
 
   .additional__list {
-    margin-top: 80px;
-    margin-left: 0;
+    max-width: 1075px;
+    margin: 0;
   }
 }
