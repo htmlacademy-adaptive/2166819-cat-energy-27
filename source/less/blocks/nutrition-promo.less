@@ -1,5 +1,5 @@
 .nutrition-promo {
-  margin: 0 20px 49px 20px;
+  margin: 0 20px 49px 21px;
   padding: 0;
 
   font-family: @font-face-lato;
@@ -9,8 +9,8 @@
 }
 
 .nutrition-promo__description {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 40px;
 
   font-family: @font-face-oswald;
   font-size: 36px;
@@ -21,69 +21,128 @@
 .nutrition-promo__list {
   position: relative;
 
-  margin-top: 40px;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
 }
 
 .nutrition-promo__item {
-  margin-bottom: 26px;
-  margin-left: 80px;
   position: relative;
+
+  min-height: 60px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
 
   font-size: 14px;
   line-height: 18px;
   list-style-type: none;
+}
 
-  &::before {
-    position: absolute;
-    left: -80px;
-    width: 60px;
-    height: 60px;
-    background-color: @foundation-color;
+.nutrition-promo__decor {
+  min-width: 60px;
+  min-height: 60px;
 
-    content: "";
-  }
+  margin-right: 20px;
 
-  &::after {
-    position: absolute;
-    content: "";
-  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: @foundation-color;
 
-  &:nth-of-type(1)::after {
-    position: absolute;
-    left: -62px;
-    top: 16px;
-    width: 25px;
-    height: 28px;
+  &--leaflet {
     background-image: url("../img/leaflet.svg");
-    background-repeat: no-repeat;
   }
 
-  &:nth-of-type(2)::after {
-    left: -63px;
-    top: 16px;
-    width: 26px;
-    height: 29px;
+  &--boiling-water {
     background-image: url("../img/boiling-water.svg");
-    background-repeat: no-repeat;
   }
 
-  &:nth-of-type(3)::after {
-    left: -63px;
-    top: 16px;
-    width: 25px;
-    height: 30px;
-    background-image: url("../img/appliances.svg");
-    background-repeat: no-repeat;
+  &--knife-and-fork {
+    background-image: url("../img/cutlery.svg");
   }
 
-  &:nth-of-type(4)::after {
-    left: -63px;
-    top: 16px;
-    width: 26px;
-    height: 31px;
+  &--watch {
     background-image: url("../img/watch.svg");
-    background-repeat: no-repeat;
+  }
+}
+
+.nutrition-promo__text {
+  margin: 0;
+}
+
+.nutrition-promo__text br {
+  display: none;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .nutrition-promo {
+    max-width: 768px;
+    margin-left: 0;
+    margin-bottom: 14px;
+  }
+
+  .nutrition-promo__description {
+    margin-left: 31px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .nutrition-promo__list {
+    margin: 72px 83px 0 31px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nutrition-promo__item {
+    max-width: 250px;
+
+
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-bottom: 77px;
+  }
+
+  .nutrition-promo__decor {
+    min-width: 80px;
+    min-height: 80px;
+
+    margin-bottom: 31px;
+  }
+
+  .nutrition-promo__text {
+    margin-bottom: 57px;
+  }
+
+  .nutrition-promo__text br {
+    display: inline;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .nutrition-promo {
+    max-width: none;
+
+    margin-right: 0;
+  }
+
+  .nutrition-promo__description {
+    margin-left: 110px;
+  }
+
+  .nutrition-promo__list {
+    margin: 72px 106px 0 110px;
+  }
+
+  .nutrition-promo__item {
+    margin-bottom: 56px;
   }
 }

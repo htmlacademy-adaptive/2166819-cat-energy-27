@@ -1,13 +1,24 @@
-.main-container-catalog {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .main-container-catalog__title {
-  margin-top: 27px;
-  margin-bottom: 41px;
-  padding: 0;
+  margin: 27px 0 41px 20px;
 
   font-size: 36px;
   line-height: 36px;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .main-container-catalog__title {
+    margin: 50px 0 90px 30px;
+
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .main-container-catalog__title {
+    margin: 81px 0 85px 110px;
+  }
 }

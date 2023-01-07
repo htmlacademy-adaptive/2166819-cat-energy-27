@@ -11,28 +11,30 @@
 <body class="page-home__body">
   <header class="main-header">
     <div class="main-header__logo">
-      <a class="main-header__logo-mobile" href="index.html">
-        <img src="img/logo-mobile.svg" alt="Логотип сайта CAT ENERGY." width="34" height="38">
-        <img src="img/logo-cat-energy.svg" alt="Сайт CAT ENERGY." width="101" height="18">
+      <a class="main-header__link" href="index.html">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width:768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+          <img class="main-header__icon-mobile" src="img/logo-mobile.svg" alt="Логотип сайта CAT ENERGY." width="34"
+            height="38">
+        </picture>
+        <img class="main-header__icon-cat-energy" src="img/logo-cat-energy.svg" alt="Сайт CAT ENERGY." width="101"
+          height="18">
       </a>
     </div>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
-        <svg class="main-nav__toggle-icon" aria-hidden="true" focusable="false" role="img" width="24" height="18"
-          viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path stroke="currentColor" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
-        </svg>
       </button>
-      <ul class="main-nav__list main-nav__list--open">
+      <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">каталог продукции</a>
         </li>
-        <li class="main-nav__item main-nav__item--current">
+        <li class="main-nav__item">
           <a class="main-nav__link" href="form.html">подбор программы</a>
         </li>
       </ul>
@@ -44,51 +46,53 @@
     <p class="main-container-form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота
     </p>
     <form class="main-container-form__information-group" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="main-container-form__information data">
-        <legend class="visually-hidden">Личные данные вашего котика.</legend>
-        <ul class="data__list">
-          <li class="data__item">
-            <label class="data__label" for="name">имя:*</label>
-            <input class="data__input" type="text" id="name" value="барсик" placeholder="Введите имя котика">
-          </li>
+      <div class="main-container-form__wrapper">
+        <fieldset class="main-container-form__information data">
+          <legend class="visually-hidden">Личные данные вашего котика.</legend>
+          <ul class="data__list">
+            <li class="data__item">
+              <label class="data__label" for="name">имя:*</label>
+              <input class="data__input" type="text" id="name" value="барсик" placeholder="Введите имя котика">
+            </li>
 
-          <li class="data__item">
-            <label class="data__label" for="weight">вес (кг):*</label>
-            <input class="data__input" type="number" id="weight" value="7" placeholder="Вес котика">
-          </li>
+            <li class="data__item">
+              <label class="data__label" for="weight">вес (кг):*</label>
+              <input class="data__input" type="number" id="weight" value="7" placeholder="Вес котика">
+            </li>
 
-          <li class="data__item">
-            <label class="data__label" for="age">возраст (лет):</label>
-            <input class="data__input" type="number" id="age" value="7" placeholder="Возраст котика">
-          </li>
-        </ul>
-      </fieldset>
+            <li class="data__item">
+              <label class="data__label" for="age">возраст (лет):</label>
+              <input class="data__input" type="number" id="age" value="7" placeholder="Возраст котика">
+            </li>
+          </ul>
+        </fieldset>
 
-      <fieldset class="main-container-form__information programs">
-        <legend class="visually-hidden">Выберите подходящую программу для вашего кота.</legend>
-        <ul class="programs__list">
-          <li class="programs__item">
-            <label class="programs__label radio">
-              <input class="radio__input" type="radio" checked>
-              <span class="radio__text">похудение</span>
-            </label>
-          </li>
+        <fieldset class="main-container-form__information programs">
+          <legend class="visually-hidden">Выберите подходящую программу для вашего кота.</legend>
+          <ul class="programs__list">
+            <li class="programs__item">
+              <label class="programs__label">
+                <input class="programs__input" type="radio" checked>
+                <span class="programs__text">похудение</span>
+              </label>
+            </li>
 
-          <li class="programs__item">
-            <label class="programs__label radio">
-              <input class="radio__input" type="radio">
-              <span class="radio__text">набор массы</span>
-            </label>
-          </li>
+            <li class="programs__item">
+              <label class="programs__label">
+                <input class="programs__input" type="radio">
+                <span class="programs__text">набор массы</span>
+              </label>
+            </li>
 
-          <li class="programs__item">
-            <label class="programs__label radio">
-              <input class="radio__input" type="radio">
-              <span class="radio__text">не знаю (нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+            <li class="programs__item">
+              <label class="programs__label">
+                <input class="programs__input" type="radio">
+                <span class="programs__text">не знаю (нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
       <fieldset class="main-container-form__information contacts">
         <legend class="contacts__title">Контактные данные (владельца кота)</legend>
@@ -108,7 +112,9 @@
 
       <section class="main-container-form__comment comment">
         <h2 class="comment__title">Комментарий</h2>
-        <textarea class="comment__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="comment__wrapper">
+          <textarea class="comment__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </section>
 
       <fieldset class="main-container-form__information additional-form">
@@ -149,18 +155,22 @@
         <p class="main-container-form__text">* — Обязательные поля</p>
       </div>
     </form>
-  </main>
 
-  <footer class="main-footer">
-    <section class="main-footer__store store">
-      <div class="store__conteiner store__conteiner--catalog">
+    <section class="store">
+      <div class="store__conteiner">
         <h2 class="visually-hidden">Адрес нашего магазина.</h2>
         <p class="store__description">приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <p class="store__adress">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
-      <img class="store__adress-map" src="img/map.png" alt="Карта" width="320" height="362">
+      <picture class="store__adress-map">
+        <source media="(min-width:1440px)" srcset="img/map-desktop.jpg" width="1440" height="400">
+        <source media="(min-width:768px)" srcset="img/map-tablet.jpg" width="768" height="400">
+        <img class="store__map" src="img/map.png" alt="Карта" width="320" height="362">
+      </picture>
     </section>
+  </main>
 
+  <footer class="main-footer">
     <section class="main-footer__footer logo-cat-energy">
       <h2 class="visually-hidden">CAT ENERGY.</h2>
       <a class="logo-cat-energy__link" href="index.html">

@@ -24,36 +24,46 @@
   color: @text-lato;
 }
 
+.example__description br {
+  display: none;
+}
+
 .example__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .example__container {
   position: relative;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 124px;
-  min-height: 56px;
+  min-width: 120px;
+  min-height: 54px;
 
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:nth-of-type(1) {
+    margin-right: 33px;
+  }
 }
 
 .example__item-title {
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .example__item-description {
   position: absolute;
-  width: 87px;
+  width: 60px;
   top: 47px;
-  right: 19px;
+  right: 30px;
 
   font-family: @font-face-lato;
   font-size: 12px;
@@ -69,4 +79,102 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .example {
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .example__title {
+    margin-left: 31px;
+    margin-bottom: 63px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    margin-left: 31px;
+    margin-bottom: 54px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__description br {
+    display: block;
+  }
+
+  .example__wrapper {
+    margin: 0 31px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__list {
+    justify-content: start;
+  }
+
+  .example__container {
+    margin-right: 42px;
+    width: 160px;
+    height: 72px;
+
+    &:nth-of-type(1) {
+      margin-right: 42px;
+    }
+  }
+
+  .example__item-title {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 10px;
+  }
+
+  .example__item-description {
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: #ffffff;
+    top: 63px;
+    left: 0;
+  }
+
+  .example__expenses {
+    max-width: 174px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .example__title {
+    margin-left: 110px;
+    margin-bottom: 146px;
+  }
+
+  .example__description {
+    max-width: 437px;
+
+    margin-left: 110px;
+    margin-bottom: 69px;
+  }
+
+  .example__description br {
+    display: none;
+  }
+
+  .example__wrapper {
+    max-width: 436px;
+    margin-left: 110px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

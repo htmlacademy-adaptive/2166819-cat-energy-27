@@ -1,5 +1,5 @@
 .comment {
-  margin-bottom: 23px;
+  margin: 0 20px 18px;
 }
 
 .comment__title {
@@ -10,11 +10,16 @@
   line-height: 26px;
 }
 
+.comment__wrapper {
+  max-width: 100%;
+}
+
 .comment__text {
-  width: 253px;
-  min-height: 131px;
-  flex-grow: 1;
-  padding: 10px 12px 10px 15px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 150px;
+
+  padding: 8px 12px 10px 15px;
 
   border: 1px solid #e7e7e7;
 
@@ -23,4 +28,36 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @text-lato;
+
+  resize: none;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .comment {
+    margin: 0 67px 60px 70px;
+  }
+
+  .comment__title {
+    margin-bottom: 76px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .comment__text {
+    min-height: 174px;
+    margin-right: 67px;
+    padding: 10px 19px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .comment {
+    margin: 0 110px 62px 110px;
+  }
 }

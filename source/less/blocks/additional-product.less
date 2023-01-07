@@ -1,18 +1,17 @@
 .additional-product {
-  margin-top: 0;
-  margin-bottom: 31px;
+  margin: 0;
 
   min-width: 280px;
   list-style-type: none;
 
-  &:last-child {
-    margin-bottom: 55px;
-  }
+  border-top: 1px solid #cdcdcd;
 }
 
 .additional-product__title {
-  margin-top: 0;
+  margin-top: 13px;
   margin-bottom: 13px;
+
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -20,6 +19,8 @@
 }
 
 .additional-product__list {
+  margin-top: 13px;
+  margin-left: 1px;
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
@@ -33,9 +34,10 @@
 }
 
 .additional-product__button {
-  background-color: @foundation-color;
+  height: 40px;
 
-  min-height: 40px;
+  margin-bottom: 18px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,4 +47,99 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @basic-white;
+  background-color: @foundation-color;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .additional-product {
+    height: 137px;
+    width: 708px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 70px auto;
+
+    border: 1px solid #cdcdcd;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .additional-product__title {
+    margin: 26px 0 25px 38px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-product__list {
+    grid-column: 3 / 4;
+    margin-top: 28px;
+    margin-right: 40px;
+    justify-content: end;
+  }
+
+  .additional-product__item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-product__price {
+    margin-left: 50px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-product__button {
+    width: 632px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .additional-product {
+    width: 895px;
+    height: 71px;
+
+    margin: 0 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: none;
+    border-top: 1px solid #cdcdcd;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .additional-product__title {
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .additional-product__list {
+    width: 285px;
+    margin-top: 26px;
+    justify-content: space-between;
+  }
+
+  .additional-product__button {
+    width: 244px;
+    margin-top: 2px;
+  }
 }

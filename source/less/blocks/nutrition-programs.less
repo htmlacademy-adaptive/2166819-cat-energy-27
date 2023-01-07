@@ -4,12 +4,11 @@
 }
 
 .nutrition-programs__list {
-  margin: 20px;
+  margin: 0 20px 0 20px;
   padding: 0;
 }
 
 .nutrition-programs__item {
-  min-height: 266px;
   margin-bottom: 20px;
 
   display: flex;
@@ -19,12 +18,25 @@
   background-color: @basic-grey;
 }
 
+.nutrition-programs__picture {
+  display: block;
+}
+
 .nutrition-programs__icon {
-  margin: 21px 19px 22px 22px;
+  display: block;
+
+  &--cat-min {
+    margin: 21px 19px 22px 23px;
+  }
+
+  &--cat-max {
+    margin: 24px 11px 22px 13px;
+  }
 }
 
 .nutrition-programs__title {
   margin-top: 30px;
+
   padding: 0;
 
   font-size: 24px;
@@ -50,4 +62,118 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+
+.nutrition-programs__link-icon {
+  margin-left: 12px;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .nutrition-programs {
+    margin-bottom: 45px;
+  }
+
+  .nutrition-programs__list {
+    margin: 0 30px;
+  }
+
+  .nutrition-programs__item {
+    position: relative;
+
+    min-height: 372px;
+    margin-bottom: 30px;
+
+    flex-direction: column;
+  }
+
+  .nutrition-programs__icon {
+    position: absolute;
+
+    &--cat-min {
+      margin: 0;
+
+      top: 81px;
+      right: 61px;
+    }
+
+    &--cat-max {
+      margin: 0;
+
+      top: 91px;
+      right: 27px;
+    }
+  }
+
+  .nutrition-programs__title {
+    margin: 77px 0 24px 53px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .nutrition-programs__description {
+    max-width: 340px;
+    margin: 0 0 52px 53px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .nutrition-programs__link {
+    position: relative;
+    margin-left: 54px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .nutrition-programs__link-icon {
+    margin-left: 21px;
+    margin-bottom: 3px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .nutrition-programs {
+    margin: 0 110px 73px 110px;
+  }
+
+  .nutrition-programs__list {
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nutrition-programs__item {
+    width: 570px;
+    min-height: 374px;
+    margin: 0;
+  }
+
+  .nutrition-programs__icon {
+    &--cat-min {
+      top: 43px;
+      left: 52px;
+    }
+
+    &--cat-max {
+      top: 49px;
+      left: 33px;
+    }
+  }
+
+  .nutrition-programs__title {
+    margin: 78px 0 73px 214px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .nutrition-programs__description {
+    max-width: 457px;
+    margin: 0 0 29px 52px;
+  }
 }

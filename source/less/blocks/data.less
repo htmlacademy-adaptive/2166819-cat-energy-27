@@ -1,5 +1,5 @@
 .data {
-  margin: 0 0 52px 0;
+  margin: 0 20px 50px;
 }
 
 .data__list {
@@ -9,11 +9,10 @@
 
 .data__item {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   list-style-type: none;
 
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 
   &:last-child {
     margin: 0;
@@ -21,7 +20,8 @@
 }
 
 .data__label {
-  margin-right: 13px;
+  margin-right: 14px;
+  margin-top: 13px;
 
   flex-shrink: 0;
 
@@ -35,7 +35,7 @@
   width: 133px;
 
   flex-grow: 1;
-  padding: 14px 20px;
+  padding: 13px 20px;
   border: 1px solid #e7e7e7;
 
   font-family: inherit;
@@ -43,4 +43,36 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @text-lato;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .data {
+    margin: 66px 67px 72px 71px;
+  }
+
+  .data__item {
+    margin-bottom: 20px;
+  }
+
+  .data__label {
+    margin-top: 11px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .data__input {
+    padding: 10px 20px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .data {
+    min-width: 570px;
+    margin: 0;
+  }
 }

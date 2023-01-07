@@ -1,9 +1,22 @@
 .page-home__body {
-  width: 320px;
   margin: 0 auto;
   padding: 0;
 
   font-family: @font-face-oswald;
   font-style: normal;
   font-weight: 400;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .page-home__body {
+    min-width: @tablet-width;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .page-home__body {
+    min-width: @desktop-width;
+  }
 }

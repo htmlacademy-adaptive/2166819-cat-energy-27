@@ -1,15 +1,11 @@
 .store__conteiner {
+  min-height: 112px;
+
+  margin: 0 20px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  min-height: 112px;
-  padding-right: 20px;
-  padding-left: 20px;
-
-  &--catalog {
-    background-color: @basic-grey;
-  }
 }
 
 .store__description {
@@ -30,5 +26,58 @@
 }
 
 .store__adress-map {
+  display: flex;
+  justify-content: center;
+}
+
+.store__map {
   display: block;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .store__conteiner {
+    min-height: 199px;
+    margin: 0 70px;
+  }
+
+  .store__description,
+  .store__adress {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .store {
+    position: relative;
+  }
+
+  .store__conteiner {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    width: 565px;
+    height: 198px;
+
+    margin: 0;
+
+    background-color: #ffffff;
+  }
+
+  .store__description {
+    margin-left: 80px;
+  }
+
+  .store__adress {
+    max-width: 120px;
+    margin-right: 115px;
+    margin-top: 12px;
+
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

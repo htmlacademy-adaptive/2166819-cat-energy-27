@@ -1,5 +1,5 @@
 .programs {
-  margin: 0 0 51px 0;
+  margin: 0 20px 51px 65px;
 }
 
 .programs__list {
@@ -17,5 +17,38 @@
 
   &:last-child {
     margin: 0;
+  }
+}
+
+.programs__input {
+  display: none;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .programs {
+    margin: 0 67px 75px 71px;
+
+    border: 1px solid #e7e7e7;
+  }
+
+  .programs__item {
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .programs__list {
+    margin: 29px 0 30px 87px;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .programs {
+    min-width: 570px;
+    margin: 0;
+
+    border: 1px solid #e7e7e7;
   }
 }
