@@ -137,6 +137,7 @@
         в
         день.
       </p>
+
       <div class="example__wrapper">
         <dl class="example__list">
           <div class="example__container">
@@ -151,18 +152,14 @@
         <p class="example__expenses">затраты на питание: 15 000 руб.</p>
       </div>
 
-      <div class="compare">
-        <img src="img/mobile-cat-before-2x.png" alt="Кот Борис до похудения." width="280" height="256">
-        <button class="compare__button" type="button">
-          <span class="visually-hidden">Перемесите ползунок для сравнения результата.</span>
-          <svg aria-hidden="true" focusable="false" role="img" width="40" height="40" viewBox="0 0 40 40" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect x="1" y="1" width="38" height="38" rx="19" fill="#fff" />
-            <path d="M16 11l-8 9 8 9V11zM32 20l-8-9v18l8-9z" fill="currentColor" />
-            <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" />
-          </svg>
-        </button>
-        <img src="img/mobile-cat-after-2x.png" alt="Кот Борис после похудения." width="280" height="256">
+      <div class="slider">
+        <div class="slider__wrapper">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/slider/cat-slider-tablet.png" width="560" height="512">
+            <img class="slider__img" src="img/slider/cat-slider-mobile.png" alt="Слайдер с результатом похудения кота Бориса."
+              width="280" height="256">
+          </picture>
+        </div>
       </div>
     </section>
 
