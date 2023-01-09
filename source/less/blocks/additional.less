@@ -19,17 +19,51 @@
 @media (min-width: @tablet-width) {
   .additional {
     margin-bottom: 36px;
+    overflow: hidden;
   }
 
   .additional__title {
+    position: relative;
+
+    width: 339px;
     margin: 0 0 0 67px;
 
     font-size: 36px;
     line-height: 36px;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 10000%;
+      height: 2px;
+
+      top: 60%;
+      right: calc(100% + 37px);
+
+      z-index: -1;
+
+      background-color: #68b738;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 10000%;
+      height: 2px;
+
+      top: 60%;
+      left: calc(100% + 35px);
+
+      z-index: -1;
+
+      background-color: #68b738;
+    }
   }
 
   .additional__list {
-    margin-top: 77px;
+    margin-top: 80px;
     flex-direction: column;
   }
 }

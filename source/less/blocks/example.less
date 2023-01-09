@@ -38,13 +38,14 @@
 .example__container {
   position: relative;
 
-  min-width: 120px;
+  min-width: 121px;
   min-height: 54px;
 
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
@@ -61,9 +62,9 @@
 
 .example__item-description {
   position: absolute;
-  width: 60px;
-  top: 47px;
-  right: 30px;
+  width: 87px;
+  margin-left: 0;
+  top: 46px;
 
   font-family: @font-face-lato;
   font-size: 12px;
@@ -138,12 +139,17 @@
   }
 
   .example__item-description {
+    width: 142px;
     font-size: 14px;
     line-height: 14px;
 
     background-color: #ffffff;
     top: 63px;
-    left: 0;
+    left: 8px;
+  }
+
+  .example__item-description br {
+    display: none;
   }
 
   .example__expenses {
