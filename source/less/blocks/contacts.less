@@ -41,6 +41,7 @@
 }
 
 .contacts__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,6 +70,23 @@
   line-height: 18px;
   color: @text-lato;
   text-transform: uppercase;
+  background-color: transparent;
+}
+
+.contacts__icon {
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 17px;
+    height: 13px;
+
+    background-image: url("../img/email.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    z-index: 2;
+
+  }
 }
 
 /* Планшетная версия сайта */
@@ -78,7 +96,7 @@
   }
 
   .contacts__title {
-    width: 515px;
+    width: 514px;
     margin-bottom: 75px;
 
     font-size: 36px;
