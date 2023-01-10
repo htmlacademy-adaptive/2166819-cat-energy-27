@@ -62,6 +62,14 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -95,10 +103,12 @@
     text-align: start;
     align-items: flex-end;
 
-    background-color: transparent;
-
     &:last-child {
       border: none;
+    }
+
+    &--index {
+      background-color: transparent;
     }
   }
 
@@ -106,7 +116,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #ffffff;
   }
 }
 
@@ -121,5 +130,9 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .main-nav__item--index .main-nav__link {
+    color: #ffffff;
   }
 }

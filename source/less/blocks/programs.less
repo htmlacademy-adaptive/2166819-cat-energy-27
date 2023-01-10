@@ -8,7 +8,10 @@
 }
 
 .programs__item {
+  position: relative;
+
   margin-bottom: 25px;
+
   list-style-type: none;
   font-size: 16px;
   line-height: 18px;
@@ -20,8 +23,27 @@
   }
 }
 
-.programs__input {
-  display: none;
+.programs__control-mark-radio {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -6px;
+  left: -45px;
+  border-radius: 50%;
+  border: 1px solid #CDCDCD;
+}
+
+.programs__input[type="checkbox"]:checked + .programs__control-mark-radio::before {
+  position: absolute;
+  content: "";
+
+  top: 8px;
+  left: 8px;
+
+  width: 13px;
+  height: 13px;
+  background-color: #68B738;
+  border-radius: 50%;
 }
 
 /* Планшетная версия сайта */
@@ -32,14 +54,30 @@
     border: 1px solid #e7e7e7;
   }
 
+  .programs__list {
+    margin: 29px 0 30px 87px;
+  }
+
   .programs__item {
     margin-bottom: 23px;
     font-size: 20px;
     line-height: 30px;
   }
 
-  .programs__list {
-    margin: 29px 0 30px 87px;
+  .programs__control-mark-radio {
+    width: 38px;
+    height: 38px;
+
+    top: -3px;
+    left: -59px;
+  }
+
+  .programs__input[type="checkbox"]:checked + .programs__control-mark-radio::before {
+    width: 18px;
+    height: 18px;
+
+    top: 9px;
+    left: 9px;
   }
 }
 

@@ -1,14 +1,36 @@
+.additional {
+  overflow: hidden;
+}
+
 .additional__title {
+  position: relative;
+
   margin: 26px 0 35px 20px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    width: 10000%;
+    height: 2px;
+
+    top: 60%;
+    left: calc(100% - 57px);
+
+    z-index: -1;
+
+    background-color: #68b738;
+  }
 }
 
 .additional__list {
   margin: 0 20px;
   padding: 0;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -19,12 +41,9 @@
 @media (min-width: @tablet-width) {
   .additional {
     margin-bottom: 36px;
-    overflow: hidden;
   }
 
   .additional__title {
-    position: relative;
-
     width: 339px;
     margin: 0 0 0 67px;
 
