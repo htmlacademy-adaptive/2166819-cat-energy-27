@@ -21,6 +21,10 @@
   &:last-child {
     margin: 0;
   }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .programs__control-mark-radio {
@@ -31,6 +35,10 @@
   left: -45px;
   border-radius: 50%;
   border: 1px solid #cdcdcd;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
 }
 
 .programs__input[type="checkbox"]:checked + .programs__control-mark-radio::before {

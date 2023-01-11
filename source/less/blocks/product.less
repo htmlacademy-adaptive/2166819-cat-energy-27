@@ -117,14 +117,31 @@
   text-transform: uppercase;
   color: @basic-white;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #ffffff70;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
   &--more {
     min-width: 280px;
 
     margin-bottom: 25px;
     padding: 0;
 
-    background: @basic-grey;
+    background-color: @basic-grey;
     color: @text-lato;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
   }
 }
 

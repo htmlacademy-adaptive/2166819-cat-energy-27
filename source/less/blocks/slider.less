@@ -2,8 +2,36 @@
   margin-top: 21px;
 }
 
+.slider__wrapper {
+  position: relative;
+}
+
 .slider__img {
   display: block;
+}
+
+.slider__button {
+  position: absolute;
+  cursor: pointer;
+  padding: 0;
+
+  top: 0;
+  right: calc(100% - 160px);
+
+  border: none;
+  background: transparent;
+}
+
+.slider__icon {
+  color: #666666;
+
+  &:hover {
+    color: #69b738;
+  }
+
+  &:active {
+    color: #5eaa2f;
+  }
 }
 
 /* Планшетная версия сайта */
@@ -15,6 +43,7 @@
 
   .slider__wrapper {
     position: relative;
+    margin: 0 auto;
 
     &::before {
       position: absolute;
