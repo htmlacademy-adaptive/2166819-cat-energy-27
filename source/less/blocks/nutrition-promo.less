@@ -95,11 +95,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    counter-reset: count;
   }
 
   .nutrition-promo__item {
     max-width: 250px;
-
+    position: relative;
 
     flex-wrap: wrap;
     align-items: flex-start;
@@ -108,6 +110,25 @@
     line-height: 24px;
 
     margin-bottom: 77px;
+
+    counter-increment: count;
+
+    &::after {
+      content: counter(count);
+      position: absolute;
+      z-index: -1;
+
+      top: -40px;
+      left: 115px;
+
+      font-family: @font-face-oswald;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+
+      color: #f2f2f2;
+    }
   }
 
   .nutrition-promo__decor {

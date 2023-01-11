@@ -1,8 +1,24 @@
 .logo-cat-energy {
-  min-height: 95px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .logo-cat-energy__icon {
   color: #111111;
-  padding: 40px 77px 21px 77px;
+  padding: 40px 77px 14px 77px;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .logo-cat-energy {
+    border-bottom: none;
+  }
+
+  .logo-cat-energy__icon {
+    width: 144px;
+    height: 27px;
+    margin-top: 5px;
+    padding: 0;
+  }
 }

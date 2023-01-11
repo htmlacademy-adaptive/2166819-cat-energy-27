@@ -3,11 +3,30 @@
 }
 
 .comment__title {
+  position: relative;
+  width: 121px;
+
   margin-top: 0;
   margin-bottom: 38px;
+
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    width: 10000%;
+    height: 2px;
+
+    top: 56%;
+    left: calc(100% + 22px);
+
+    z-index: -1;
+
+    background-color: #68b738;
+  }
 }
 
 .comment__wrapper {
@@ -39,10 +58,31 @@
   }
 
   .comment__title {
+    width: 182px;
     margin-bottom: 76px;
 
     font-size: 36px;
     line-height: 36px;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 10000%;
+      height: 2px;
+
+      top: 60%;
+      right: calc(100% + 40px);
+
+      z-index: -1;
+
+      background-color: #68b738;
+    }
+
+    &::before {
+      top: 60%;
+      left: calc(100% + 40px);
+    }
   }
 
   .comment__text {

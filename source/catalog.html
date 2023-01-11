@@ -32,7 +32,7 @@
           <a class="main-nav__link" href="index.html">главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+          <a class="main-nav__link main-nav__link--current" href="catalog.html">каталог продукции</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="form.html">подбор программы</a>
@@ -49,7 +49,7 @@
           <a class="product__link" href="#">
             <h2 class="product__title">Cat Energy PRO 500 г</h2>
           </a>
-          <a class="product__img" href="#">
+          <a class="product__img-link" href="#">
             <picture>
               <source media="(min-width:768px)"
                 srcset="img/product/product-tablet-and-desktop/catalog-tablet-chicken-500g.png" width="161"
@@ -79,7 +79,7 @@
           <a class="product__link" href="#">
             <h2 class="product__title">Cat Energy PRO 1000 г</h2>
           </a>
-          <a class="product__img" href="#">
+          <a class="product__img-link" href="#">
             <picture>
               <source media="(min-width:1440px)"
                 srcset="img/product/product-tablet-and-desktop/catalog-tablet-chicken-1000g.png" width="172"
@@ -112,7 +112,7 @@
           <a class="product__link" href="#">
             <h2 class="product__title">Cat Energy PRO 500 г</h2>
           </a>
-          <a class="product__img" href="#">
+          <a class="product__img-link" href="#">
             <picture>
               <source media="(min-width:768px)"
                 srcset="img/product/product-tablet-and-desktop/catalog-tablet-fish-500g.png" width="163" height="174">
@@ -141,7 +141,7 @@
           <a class="product__link" href="#">
             <h2 class="product__title">Cat Energy PRO 1000 г</h2>
           </a>
-          <a class="product__img" href="#">
+          <a class="product__img-link" href="#">
             <picture>
               <source media="(min-width:1440px)"
                 srcset="img/product/product-tablet-and-desktop/catalog-tablet-fish-1000g.png" width="172" height="196">
@@ -172,7 +172,7 @@
           <a class="product__link" href="#">
             <h2 class="product__title">Cat Energy slim 500 г</h2>
           </a>
-          <a class="product__img" href="#">
+          <a class="product__img-link" href="#">
             <picture>
               <source media="(min-width:768px)"
                 srcset="img/product/product-tablet-and-desktop/catalog-tablet-buckwheat-500g.png" width="161"
@@ -202,7 +202,7 @@
           <a class="product__link" href="#">
             <h2 class="product__title">Cat Energy slim 1000 г</h2>
           </a>
-          <a class="product__img" href="#">
+          <a class="product__img-link" href="#">
             <picture>
               <source media="(min-width:1440px)"
                 srcset="img/product/product-tablet-and-desktop/catalog-tablet-buckwheat-1000g.png" width="172"
@@ -235,7 +235,7 @@
           <a class="product__link" href="#">
             <h2 class="product__title">Cat Energy slim 500 г</h2>
           </a>
-          <a class="product__img" href="#">
+          <a class="product__img-link" href="#">
             <picture>
               <source media="(min-width:768px)"
                 srcset="img/product/product-tablet-and-desktop/catalog-tablet-rice-500g.png" width="163" height="174">
@@ -322,11 +322,12 @@
         <p class="store__description">приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <p class="store__adress">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
-      <picture class="store__adress-map">
-        <source media="(min-width:1440px)" srcset="img/map-desktop.jpg" width="1440" height="400">
-        <source media="(min-width:768px)" srcset="img/map-tablet.jpg" width="768" height="400">
-        <img class="store__map" src="img/map.png" alt="Карта" width="320" height="362">
-      </picture>
+      <div class="store__adress-map">
+        <iframe class="store__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6223454056994!2d30.322969700221982!3d59.93864573985539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1673169968953!5m2!1sru!2sru"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
   </main>
 
@@ -401,6 +402,7 @@
       </a>
     </section>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

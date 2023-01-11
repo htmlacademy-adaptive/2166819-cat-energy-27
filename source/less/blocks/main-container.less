@@ -69,6 +69,15 @@
   color: @basic-white;
 
   background-color: @foundation-color;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #ffffff70;
+  }
 }
 
 /* Планшетная версия сайта */
@@ -131,9 +140,27 @@
 /* Десктопная версия сайта */
 @media (min-width: @desktop-width) {
   .main-container__preview {
+    position: relative;
     min-height: 471px;
 
     margin-bottom: 82px;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 50%;
+      height: 694px;
+
+      top: -222px;
+      left: 50%;
+
+      background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/index-background-desktop-cat1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      z-index: -1;
+    }
   }
 
   .main-container__preview-title {
