@@ -25,14 +25,13 @@
 
 .main-header__icon-mobile {
   position: absolute;
-  top: -11px;
+  top: -14px;
   left: 1px;
 }
 
 .main-header__icon-cat-energy {
   margin-left: 91px;
 }
-
 
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
@@ -49,6 +48,14 @@
   .main-header__icon-mobile {
     top: -33px;
     left: 1px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 

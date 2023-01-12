@@ -1,7 +1,7 @@
 .store__conteiner {
   min-height: 112px;
 
-  margin: 0 20px;
+  margin: 0 21px;
 
   display: flex;
   justify-content: space-between;
@@ -26,8 +26,15 @@
 }
 
 .store__adress-map {
+  height: 362px;
+
   display: flex;
   justify-content: center;
+
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 362px;
+  background-position: center;
 }
 
 .store__map {
@@ -41,10 +48,22 @@
     margin: 0 70px;
   }
 
-  .store__description,
-  .store__adress {
+  .store__description {
     font-size: 20px;
     line-height: 26px;
+  }
+
+  .store__adress {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  .store__adress-map {
+    height: 400px;
+
+    background-image: url("../img/map-tablet.jpg");
+    background-size: 768px 400px;
   }
 }
 
@@ -79,5 +98,10 @@
 
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .store__adress-map {
+    background-image: url("../img/map-desktop.jpg");
+    background-size: 1440px 400px;
   }
 }

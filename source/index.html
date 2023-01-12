@@ -28,13 +28,13 @@
         <span class="visually-hidden">Открыть меню.</span>
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">главная</a>
+        <li class="main-nav__item main-nav__item--index">
+          <a class="main-nav__link main-nav__link--current" href="index.html">главная</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--index">
           <a class="main-nav__link" href="catalog.html">каталог продукции</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--index">
           <a class="main-nav__link" href="form.html">подбор программы</a>
         </li>
       </ul>
@@ -137,32 +137,37 @@
         в
         день.
       </p>
+
       <div class="example__wrapper">
         <dl class="example__list">
           <div class="example__container">
             <dt class="example__item-title">5 кг</dt>
-            <dd class="example__item-description">снижение веса</dd>
+            <dd class="example__item-description">снижение <br> веса</dd>
           </div>
           <div class="example__container">
             <dt class="example__item-title">60 дней</dt>
-            <dd class="example__item-description">затрачено времени</dd>
+            <dd class="example__item-description">затрачено <br> времени</dd>
           </div>
         </dl>
         <p class="example__expenses">затраты на питание: 15 000 руб.</p>
       </div>
 
-      <div class="compare">
-        <img src="img/mobile-cat-before-2x.png" alt="Кот Борис до похудения." width="280" height="256">
-        <button class="compare__button" type="button">
-          <span class="visually-hidden">Перемесите ползунок для сравнения результата.</span>
-          <svg aria-hidden="true" focusable="false" role="img" width="40" height="40" viewBox="0 0 40 40" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect x="1" y="1" width="38" height="38" rx="19" fill="#fff" />
-            <path d="M16 11l-8 9 8 9V11zM32 20l-8-9v18l8-9z" fill="currentColor" />
-            <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" />
-          </svg>
-        </button>
-        <img src="img/mobile-cat-after-2x.png" alt="Кот Борис после похудения." width="280" height="256">
+      <div class="slider">
+        <div class="slider__wrapper">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/slider/cat-slider-tablet.png" width="560" height="512">
+            <img class="slider__img" src="img/slider/cat-slider-mobile.png" alt="Слайдер с результатом похудения кота Бориса."
+              width="280" height="256">
+          </picture>
+          <button class="slider__button">
+            <svg class="slider__icon" width="40" height="258" viewBox="0 0 40 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="18" width="4" height="257.02" rx="2" fill="currentColor" />
+              <rect x="1" y="110" width="38" height="38" rx="19" fill="#fff" />
+              <path d="M16 120l-8 9 8 9v-18zM32 129l-8-9v18l8-9z" fill="currentColor" />
+              <rect x="1" y="110" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -172,11 +177,13 @@
         <p class="store__description">приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <p class="store__adress">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
-      <picture class="store__adress-map">
-        <source media="(min-width:1440px)" srcset="img/map-desktop.jpg" width="1440" height="400">
-        <source media="(min-width:768px)" srcset="img/map-tablet.jpg" width="768" height="400">
-        <img class="store__map" src="img/map.png" alt="Карта" width="320" height="362">
-      </picture>
+      <div class="store__adress-map">
+        <iframe class="store__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6223454056994!2d30.322969700221982!3d59.93864573985539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1673169968953!5m2!1sru!2sru"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
     </section>
   </main>
 
@@ -251,6 +258,7 @@
       </a>
     </section>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
