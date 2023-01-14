@@ -1,3 +1,9 @@
+.store {
+  &--background {
+    background-color: #f2f2f2;
+  }
+}
+
 .store__conteiner {
   min-height: 112px;
 
@@ -23,6 +29,10 @@
   font-family: @font-face-lato;
   font-size: 14px;
   line-height: 20px;
+}
+
+.store__adress span {
+  display: block;
 }
 
 .store__adress-map {
@@ -54,9 +64,14 @@
   }
 
   .store__adress {
+    margin-top: -8px;
     font-size: 16px;
     line-height: 20px;
     text-align: end;
+  }
+
+  .store__adress span {
+    margin-top: 20px;
   }
 
   .store__adress-map {
@@ -91,10 +106,8 @@
   }
 
   .store__adress {
-    max-width: 120px;
-    margin-right: 115px;
-    margin-top: 12px;
-
+    text-align: left;
+    margin-right: 80px;
 
     font-size: 16px;
     line-height: 20px;
