@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>CAT ENERGY FORM</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -72,7 +76,7 @@
           <ul class="programs__list">
             <li class="programs__item">
               <label class="programs__label">
-                <input class="visually-hidden programs__input" type="checkbox" checked>
+                <input class="visually-hidden programs__input" type="radio" name="control-mark" checked>
                 <span class="programs__control-mark-radio"></span>
                 <span class="programs__text">похудение</span>
               </label>
@@ -80,7 +84,7 @@
 
             <li class="programs__item">
               <label class="programs__label">
-                <input class="visually-hidden programs__input" type="checkbox">
+                <input class="visually-hidden programs__input" type="radio" name="control-mark">
                 <span class="programs__control-mark-radio"></span>
                 <span class="programs__text">набор массы</span>
               </label>
@@ -88,7 +92,7 @@
 
             <li class="programs__item">
               <label class="programs__label">
-                <input class="visually-hidden programs__input" type="checkbox">
+                <input class="visually-hidden programs__input" type="radio" name="control-mark">
                 <span class="programs__control-mark-radio"></span>
                 <span class="programs__text">не знаю (нужен ваш совет)</span>
               </label>
@@ -114,7 +118,8 @@
           <li class="contacts__item">
             <label class="contacts__label" for="tel">телефон:*</label>
             <input class="contacts__input" type="tel" id="tel" value="8 (960) 900-60-90" placeholder="Введите тедефон">
-            <svg class="contacts__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="contacts__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7 8h8.5m0 0L13 5.5M15.5 8L13 10.5M5.5.5v5h-3v5h3v5H3c-1.5 0-2.5-1-2.5-2.5V3C.5 1.5 1.5.5 3 .5h2.5z"
                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
@@ -135,7 +140,7 @@
         <ul class="additional-form__list">
           <li class="additional-form__item">
             <label class="additional-form__label">
-              <input class="visually-hidden additional-form__input" type="checkbox" checked>
+              <input class="visually-hidden additional-form__input" type="checkbox" checked name="sweetener">
               <span class="additional-form__control-mark-checkbox"></span>
               <span class="additional-form__text">сахарозаменитель</span>
             </label>
@@ -143,7 +148,7 @@
 
           <li class="additional-form__item">
             <label class="additional-form__label">
-              <input class="visually-hidden additional-form__input" type="checkbox">
+              <input class="visually-hidden additional-form__input" type="checkbox" name="water">
               <span class="additional-form__control-mark-checkbox"></span>
               <span class="additional-form__text">питьевая вода</span>
             </label>
@@ -151,7 +156,7 @@
 
           <li class="additional-form__item">
             <label class="additional-form__label">
-              <input class="visually-hidden additional-form__input" type="checkbox">
+              <input class="visually-hidden additional-form__input" type="checkbox" name="milk">
               <span class="additional-form__control-mark-checkbox"></span>
               <span class="additional-form__text">молоко</span>
             </label>
@@ -159,7 +164,7 @@
 
           <li class="additional-form__item">
             <label class="additional-form__label">
-              <input class="visually-hidden additional-form__input" type="checkbox">
+              <input class="visually-hidden additional-form__input" type="checkbox" name="vitamins">
               <span class="additional-form__control-mark-checkbox"></span>
               <span class="additional-form__text">витамины</span>
             </label>
@@ -173,19 +178,17 @@
       </div>
     </form>
 
-    <section class="store">
+    <section class="store store--background">
       <div class="store__conteiner">
         <h2 class="visually-hidden">Адрес нашего магазина.</h2>
         <p class="store__description">приглашаем<br> к сотрудничеству<br> дилеров!</p>
-        <p class="store__adress">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <p class="store__adress">ул. Большая<br> Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
       <div class="store__adress-map">
         <iframe class="store__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6223454056994!2d30.322969700221982!3d59.93864573985539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1673169968953!5m2!1sru!2sru"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    </section>
     </section>
   </main>
 

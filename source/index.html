@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>CAT ENERGY</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -46,10 +50,14 @@
       <h1 class="main-container__preview-title">Функциональное питание для котов</h1>
       <p class="main-container__preview-description">Занялся собой? Займись котом!</p>
       <picture class="main-container__picture">
-        <source media="(min-width:1440px)" srcset="img/cat-food-desktop.png" width="552" height="499">
-        <source media="(min-width:768px)" srcset="img/cat-food-tablet.png" width="709" height="609">
-        <img class="main-container__img" src="img/cat-food.png" alt="Баночка с правильным пианием для котов."
-          width="280" height="270">
+        <source media="(min-width:1440px)"
+          srcset="img/cat-food/cat-food-desktop.png 1x, img/cat-food/cat-food-desktop@2x.png 2x" width="552"
+          height="499">
+        <source media="(min-width:768px)"
+          srcset="img/cat-food/cat-food-tablet.png 1x, img/cat-food/cat-food-tablet@2x.png 2x" width="709" height="609">
+        <img class="main-container__img" src="img/cat-food/cat-food-mobile.png"
+          srcset="img/cat-food/cat-food-mobile@2x.png 2x" alt="Баночка с правильным пианием для котов." width="280"
+          height="270">
       </picture>
       <a class="main-container__preview-button program-link" href="form.html">подобрать программу</a>
     </section>
@@ -149,22 +157,33 @@
             <dd class="example__item-description">затрачено <br> времени</dd>
           </div>
         </dl>
-        <p class="example__expenses">затраты на питание: 15 000 руб.</p>
+        <p class="example__expenses">затраты на питание: <span>15 000 руб.</span></p>
       </div>
 
       <div class="slider">
         <div class="slider__wrapper">
           <picture>
-            <source media="(min-width:768px)" srcset="img/slider/cat-slider-tablet.png" width="560" height="512">
-            <img class="slider__img" src="img/slider/cat-slider-mobile.png" alt="Слайдер с результатом похудения кота Бориса."
-              width="280" height="256">
+            <source media="(min-width:768px)"
+              srcset="img/slider/cat-slider-tablet-before.png 1x, img/slider/cat-slider-tablet-before@2x.png 2x"
+              width="560" height="512">
+            <img class="slider__img slider__img--before" src="img/slider/cat-slider-mobile-before.png"
+              srcset="img/slider/cat-slider-mobile-before@2x.png 2x" alt="Кот Борис до похудения." width="280"
+              height="256">
+          </picture>
+          <picture>
+            <source media="(min-width:768px)"
+              srcset="img/slider/cat-slider-tablet-after.png 1x, img/slider/cat-slider-tablet-after@2x.png 2x"
+              width="560" height="512">
+            <img class="slider__img slider__img--after" src="img/slider/cat-slider-mobile-after.png"
+              srcset="img/slider/cat-slider-mobile-after@2x.png 2x" alt="Кот Борис до похудения." width="280"
+              height="256">
           </picture>
           <button class="slider__button">
-            <svg class="slider__icon" width="40" height="258" viewBox="0 0 40 258" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="18" width="4" height="257.02" rx="2" fill="currentColor" />
-              <rect x="1" y="110" width="38" height="38" rx="19" fill="#fff" />
-              <path d="M16 120l-8 9 8 9v-18zM32 129l-8-9v18l8-9z" fill="currentColor" />
-              <rect x="1" y="110" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" />
+            <svg class="slider__button-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="38" height="38" rx="19" fill="#fff" />
+              <path d="M16 11l-8 9 8 9V11zM32 20l-8-9v18l8-9z" fill="currentColor" />
+              <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" />
             </svg>
           </button>
         </div>
@@ -175,15 +194,13 @@
       <div class="store__conteiner">
         <h2 class="visually-hidden">Адрес нашего магазина.</h2>
         <p class="store__description">приглашаем<br> к сотрудничеству<br> дилеров!</p>
-        <p class="store__adress">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <p class="store__adress">ул. Большая<br> Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
       <div class="store__adress-map">
         <iframe class="store__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6223454056994!2d30.322969700221982!3d59.93864573985539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1673169968953!5m2!1sru!2sru"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    </section>
     </section>
   </main>
 

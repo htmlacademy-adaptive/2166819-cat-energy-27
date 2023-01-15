@@ -9,10 +9,17 @@
   flex-direction: column;
   align-items: center;
 
-  background: linear-gradient(#68b738d9, #68b738d9), url("../img/index-background-desktop-cat.jpg"), linear-gradient(#0e140ad9, #264614d9, #0e140ad9);
+  background: linear-gradient(#68b738d9, #68b738d9), url("../img/index-background-cat/index-background-mobile-cat.jpg"), linear-gradient(#0e140ad9, #264614d9, #0e140ad9);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto 302px;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(#68b738d9, #68b738d9), url("../img/index-background-cat/index-background-modile@2x.jpg"), linear-gradient(#0e140ad9, #264614d9, #0e140ad9);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto 302px;
+  }
 }
 
 .main-container__preview-title {
@@ -155,11 +162,20 @@
       top: -222px;
       left: 50%;
 
-      background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/index-background-desktop-cat1.jpg");
+      background-color: #499819d9;
+      background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/index-background-cat/index-background-desktop-cat.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-position: top right;
+      background-size: 720px 694px;
 
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/index-background-cat/index-background-desktop@2x.jpg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 720px 694px;
+      }
     }
   }
 
