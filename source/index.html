@@ -89,22 +89,29 @@
     <section class="main-container__preview">
       <h1 class="main-container__preview-title">Функциональное питание для котов</h1>
       <p class="main-container__preview-description">Занялся собой? Займись котом!</p>
-      <picture class="main-container__picture">
-        <source type="image/webp" media="(min-width:1440px)"
-          srcset="img/cat-food/cat-food-desktop.webp 1x, img/cat-food/cat-food-desktop@2x.webp 2x" width="552" height="499">
-        <source type="image/webp" media="(min-width:768px)"
-          srcset="img/cat-food/cat-food-tablet.webp 1x, img/cat-food/cat-food-tablet@2x.webp 2x" width="709" height="609">
-        <source type="image/webp" srcset="img/cat-food/cat-food-mobile.webp 1x, img/cat-food/cat-food-mobile@2x.webp 2x"
-          width="280" height="270">
+      <div class="main-container__picture">
+        <picture>
+          <source type="image/webp" media="(min-width:1440px)"
+            srcset="img/cat-food/cat-food-desktop.webp 1x, img/cat-food/cat-food-desktop@2x.webp 2x" width="552"
+            height="499">
+          <source type="image/webp" media="(min-width:768px)"
+            srcset="img/cat-food/cat-food-tablet.webp 1x, img/cat-food/cat-food-tablet@2x.webp 2x" width="709"
+            height="609">
+          <source type="image/webp"
+            srcset="img/cat-food/cat-food-mobile.webp 1x, img/cat-food/cat-food-mobile@2x.webp 2x" width="280"
+            height="270">
 
-        <source media="(min-width:1440px)"
-          srcset="img/cat-food/cat-food-desktop.png 1x, img/cat-food/cat-food-desktop@2x.png 2x" width="552" height="499">
-        <source media="(min-width:768px)" srcset="img/cat-food/cat-food-tablet.png 1x, img/cat-food/cat-food-tablet@2x.png 2x"
-          width="709" height="609">
-        <img class="main-container__img" src="img/cat-food/cat-food-mobile.png"
-          srcset="img/cat-food/cat-food-mobile@2x.png 2x" alt="Баночка с правильным пианием для котов." width="280"
-          height="270">
-      </picture>
+          <source media="(min-width:1440px)"
+            srcset="img/cat-food/cat-food-desktop.png 1x, img/cat-food/cat-food-desktop@2x.png 2x" width="552"
+            height="499">
+          <source media="(min-width:768px)"
+            srcset="img/cat-food/cat-food-tablet.png 1x, img/cat-food/cat-food-tablet@2x.png 2x" width="709"
+            height="609">
+          <img class="main-container__img" src="img/cat-food/cat-food-mobile.png"
+            srcset="img/cat-food/cat-food-mobile@2x.png 2x" alt="Баночка с правильным пианием для котов." width="280"
+            height="270">
+        </picture>
+      </div>
       <a class="main-container__preview-button program-link" href="form.html">подобрать программу</a>
     </section>
 
@@ -209,33 +216,21 @@
       <div class="slider">
         <div class="slider__wrapper">
           <picture>
-            <source type="image/webp" media="(min-width:768px)"
-              srcset="img/slider/cat-slider-tablet-before.webp 1x, img/slider/cat-slider-tablet-before@2x.webp 2x" width="560"
-              height="512">
-            <source type="image/webp"
-              srcset="img/slider/cat-slider-mobile-before.webp 1x, img/slider/cat-slider-mobile-before@2x.webp 2x" width="280"
-              height="256">
-
             <source media="(min-width:768px)"
-              srcset="img/slider/cat-slider-mobile-before.png 1x, img/slider/cat-slider-mobile-before@2x.png 2x" width="560"
-              height="512">
+              srcset="img/slider/cat-slider-mobile-before.png 1x, img/slider/cat-slider-mobile-before@2x.png 2x"
+              width="560" height="512">
             <img class="slider__img slider__img--before" src="img/slider/cat-slider-mobile-before.png"
-              srcset="img/slider/cat-slider-mobile-before@2x.png 2x" alt="Кот Борис до похудения." width="280" height="256">
+              srcset="img/slider/cat-slider-mobile-before@2x.png 2x" alt="Кот Борис до похудения." width="280"
+              height="256">
           </picture>
 
           <picture>
-            <source type="image/webp" media="(min-width:768px)"
-              srcset="img/slider/cat-slider-tablet-after.webp 1x, img/slider/cat-slider-tablet-after@2x.webp 2x" width="560"
-              height="512">
-              <source type="image/webp"
-              srcset="img/slider/cat-slider-mobile-after.webp 1x, img/slider/cat-slider-mobile-after@2x.webp 2x" width="280"
-              height="256">
-
             <source media="(min-width:768px)"
-              srcset="img/slider/cat-slider-tablet-after.png 1x, img/slider/cat-slider-tablet-after@2x.png 2x" width="560"
-              height="512">
+              srcset="img/slider/cat-slider-tablet-after.png 1x, img/slider/cat-slider-tablet-after@2x.png 2x"
+              width="560" height="512">
             <img class="slider__img slider__img--after" src="img/slider/cat-slider-mobile-after.png"
-              srcset="img/slider/cat-slider-mobile-after@2x.png 2x" alt="Кот Борис до похудения." width="280" height="256">
+              srcset="img/slider/cat-slider-mobile-after@2x.png 2x" alt="Кот Борис после похудения." width="280"
+              height="256">
           </picture>
           <button class="slider__button">
             <svg class="slider__button-icon" width="40" height="40">
