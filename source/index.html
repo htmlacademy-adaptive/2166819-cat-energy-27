@@ -93,9 +93,8 @@
           <a class="nutrition-programs__link" href="#">
             каталог slim
             <svg class="nutrition-programs__link-icon" aria-hidden="true" focusable="false" role="img" width="24"
-              height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="currentColor" stroke-width="2" d="M0 6h18" />
-              <path d="M24 6l-6.75 5.2V.8L24 6z" fill="currentColor" />
+              height="12">
+              <use href="img/sprite.svg#nutrition-programs-link-icon"></use>
             </svg>
           </a>
         </li>
@@ -114,9 +113,8 @@
           <a class="nutrition-programs__link" href="#">
             каталог pro
             <svg class="nutrition-programs__link-icon" aria-hidden="true" focusable="false" role="img" width="24"
-              height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="currentColor" stroke-width="2" d="M0 6h18" />
-              <path d="M24 6l-6.75 5.2V.8L24 6z" fill="currentColor" />
+              height="12">
+              <use href="img/sprite.svg#nutrition-programs-link-icon"></use>
             </svg>
           </a>
         </li>
@@ -154,7 +152,7 @@
       <h2 class="example__title">Живой пример</h2>
       <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
         Slim. <br>
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
+        &nbsp;Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
         в
         день.
       </p>
@@ -177,7 +175,13 @@
         <div class="slider__wrapper">
           <picture>
             <source media="(min-width:768px)"
-              srcset="img/slider/cat-slider-mobile-before.png 1x, img/slider/cat-slider-mobile-before@2x.png 2x"
+              srcset="img/slider/cat-slider-tablet-before.webp 1x, img/slider/cat-slider-tablet-before@2x.webp 2x"
+              width="560" height="512">
+            <source type="image/webp" srcset="img/slider/cat-slider-mobile-before.webp 1x, img/slider/cat-slider-mobile-before@2x.webp 2x"
+              width="280" height="256">
+
+            <source media="(min-width:768px)"
+              srcset="img/slider/cat-slider-tablet-before.png 1x, img/slider/cat-slider-tablet-before@2x.png 2x"
               width="560" height="512">
             <img class="slider__img slider__img--before" src="img/slider/cat-slider-mobile-before.png"
               srcset="img/slider/cat-slider-mobile-before@2x.png 2x" alt="Кот Борис до похудения." width="280"
@@ -185,6 +189,12 @@
           </picture>
 
           <picture>
+            <source media="(min-width:768px)"
+              srcset="img/slider/cat-slider-tablet-after.webp 1x, img/slider/cat-slider-tablet-after@2x.webp 2x"
+              width="560" height="512">
+            <source type="image/webp" srcset="img/slider/cat-slider-mobile-after.webp 1x, img/slider/cat-slider-mobile-after@2x.webp 2x"
+              width="280" height="256">
+
             <source media="(min-width:768px)"
               srcset="img/slider/cat-slider-tablet-after.png 1x, img/slider/cat-slider-tablet-after@2x.png 2x"
               width="560" height="512">
@@ -194,7 +204,7 @@
           </picture>
           <button class="slider__button">
             <svg class="slider__button-icon" width="40" height="40">
-              <use xlink:href="#slider"></use>
+              <use href="img/sprite.svg#slider"></use>
             </svg>
           </button>
         </div>
@@ -219,8 +229,8 @@
     <section class="main-footer__footer logo-cat-energy">
       <h2 class="visually-hidden">CAT ENERGY.</h2>
       <a class="logo-cat-energy__link" href="index.html">
-        <svg class="logo-cat-energy__icon" aria-hidden="true" focusable="false" role="img" width="128" height="24">
-          <use xlink:href="#cat-energy"></use>
+        <svg class="logo-cat-energy__icon" aria-hidden="true" focusable="false" role="img" width="129" height="24">
+          <use href="img/sprite.svg#cat-energy-text"></use>
         </svg>
       </a>
     </section>
@@ -232,7 +242,7 @@
           <span class="visually-hidden">Мы в Вконтакте.</span>
           <a class="social__link" href="https://vk.com/htmlacademy">
             <svg class="social__link-icon" aria-hidden="true" focusable="false" role="img" width="27" height="17">
-              <use xlink:href="#vkontakte"></use>
+              <use href="img/sprite.svg#vkontakte"></use>
             </svg>
           </a>
         </li>
@@ -240,7 +250,7 @@
           <span class="visually-hidden">Мы в Ютубе.</span>
           <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
             <svg class="social__link-icon" aria-hidden="true" focusable="false" role="img" width="24" height="19">
-              <use xlink:href="#youtube"></use>
+              <use href="img/sprite.svg#youtube"></use>
             </svg>
           </a>
         </li>
@@ -248,7 +258,7 @@
           <span class="visually-hidden">Мы в Телеграме.</span>
           <a class="social__link" href="https://t.me/htmlacademy">
             <svg class="social__link-icon" aria-hidden="true" focusable="false" role="img" width="20" height="18">
-              <use xlink:href="#telegram"></use>
+              <use href="img/sprite.svg#telegram"></use>
             </svg>
           </a>
         </li>
@@ -260,7 +270,7 @@
       <a class="html-academy__link" href="https://htmlacademy.ru/profile/id2166819">
         <p class="html-academy__description">HTML Academy</p>
         <svg class="html-academy__link-icon" aria-hidden="true" focusable="false" role="img" width="27" height="34">
-          <use xlink:href="#html-academy"></use>
+          <use href="img/sprite.svg#html-academy"></use>
         </svg>
       </a>
     </section>

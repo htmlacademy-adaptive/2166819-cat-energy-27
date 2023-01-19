@@ -532,7 +532,7 @@
   margin-right: 10px;
 }
 .contacts__input {
-  width: 171px;
+  width: 131px;
   flex-grow: 1;
   padding: 13px 40px 13px 15px;
   border: 1px solid #e7e7e7;
@@ -1029,17 +1029,16 @@
   border-bottom: 1px solid #d9d9d9;
 }
 .logo-cat-energy__icon {
-  color: #111111;
   padding: 40px 77px 14px 77px;
 }
 .logo-cat-energy__icon:hover {
-  color: #3e3e3e;
+  opacity: 0.8;
 }
 .logo-cat-energy__icon:focus {
-  color: #3e3e3e;
+  opacity: 0.8;
 }
 .logo-cat-energy__icon:active {
-  color: #6b6b6b;
+  opacity: 0.6;
 }
 /* Планшетная версия сайта */
 @media (min-width: 768px) {

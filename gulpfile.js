@@ -53,7 +53,7 @@ const copyImages = () => {
 
 //WEBP
 const createImagesWebp = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/index-background-cat/*.jpg', '!source/img/cat-in-bag/*.jpg'])
   .pipe(squoosh({
     webp: {}
   }))
@@ -70,7 +70,6 @@ const optimizeSvg = () => {
 //SPRITE
 const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
-  .pipe(svgo())
   .pipe(svgstore({
     inlineSvg: true
     })
