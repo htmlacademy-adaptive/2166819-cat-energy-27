@@ -21,10 +21,6 @@
   &:last-child {
     margin: 0;
   }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .programs__control-mark-radio {
@@ -41,21 +37,28 @@
   }
 }
 
-.programs__input[type="radio"]:focus + .programs__control-mark-radio {
-  outline: 1px solid #000000;
-}
+.programs__input[type="radio"] {
+  &:checked + .programs__control-mark-radio::before {
+    position: absolute;
+    content: "";
 
-.programs__input[type="radio"]:checked + .programs__control-mark-radio::before {
-  position: absolute;
-  content: "";
+    top: 8px;
+    left: 8px;
 
-  top: 8px;
-  left: 8px;
+    width: 13px;
+    height: 13px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
 
-  width: 13px;
-  height: 13px;
-  background-color: #68b738;
-  border-radius: 50%;
+  &:focus-visible + .programs__control-mark-radio {
+    outline: 1px solid #000000;
+  }
+
+  &:disabled ~ .programs__text,
+  &:disabled + .programs__control-mark-radio {
+    opacity: 0.3;
+  }
 }
 
 /* Планшетная версия сайта */

@@ -64,23 +64,31 @@
   }
 }
 
-.additional-form__input[type="checkbox"]:focus + .additional-form__control-mark-checkbox {
-  outline: 1px solid #000000;
+.additional-form__input[type="checkbox"] {
+  &:checked + .additional-form__control-mark-checkbox::before {
+    position: absolute;
+    content: "";
+
+    width: 18px;
+    height: 14px;
+
+    top: 7px;
+    left: 4px;
+
+    background-image: url("../img/check-mark.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:focus-visible + .additional-form__control-mark-checkbox {
+    outline: 1px solid #000000;
+  }
+
+  &:disabled ~ .additional-form__text,
+  &:disabled + .additional-form__control-mark-checkbox {
+    opacity: 0.3;
+  }
 }
 
-.additional-form__input[type="checkbox"]:checked + .additional-form__control-mark-checkbox::before {
-  position: absolute;
-  content: "";
-
-  width: 18px;
-  height: 14px;
-
-  top: 7px;
-  left: 4px;
-
-  background-image: url("../img/check-mark.svg");
-  background-repeat: no-repeat;
-}
 
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
