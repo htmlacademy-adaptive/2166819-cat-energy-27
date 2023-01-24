@@ -57,6 +57,7 @@
 }
 
 .nutrition-programs__link {
+  min-width: 200px;
   margin-left: 20px;
   margin-bottom: 22px;
 
@@ -66,13 +67,25 @@
   text-transform: uppercase;
   color: #000000;
 
+  background-image: url("../img/nutrition-programs/link-icon.svg");
+  background-repeat: no-repeat;
+
+  &--slim {
+    background-position: 102px 2px;
+  }
+
+  &--pro {
+    background-position: 98px 2px;
+  }
+
   &:active {
     opacity: 0.3;
+    background-image: url("../img/nutrition-programs/link-icon-long.svg");
   }
-}
 
-.nutrition-programs__link-icon {
-  margin-left: 12px;
+  &:hover {
+    background-image: url("../img/nutrition-programs/link-icon-long.svg");
+  }
 }
 
 /* Планшетная версия сайта */
@@ -137,11 +150,14 @@
 
     font-size: 20px;
     line-height: 30px;
-  }
 
-  .nutrition-programs__link-icon {
-    margin-left: 21px;
-    margin-bottom: 3px;
+    &--slim {
+      background-position: 132px 9px;
+    }
+
+    &--pro {
+      background-position: 128px 9px;
+    }
   }
 }
 

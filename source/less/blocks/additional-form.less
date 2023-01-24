@@ -45,6 +45,10 @@
   &:last-child {
     margin: 0;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .additional-form__control-mark-checkbox {
@@ -54,6 +58,14 @@
   top: -6px;
   left: -45px;
   border: 1px solid #cdcdcd;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+}
+
+.additional-form__input[type="checkbox"]:focus + .additional-form__control-mark-checkbox {
+  outline: 1px solid #000000;
 }
 
 .additional-form__input[type="checkbox"]:checked + .additional-form__control-mark-checkbox::before {
