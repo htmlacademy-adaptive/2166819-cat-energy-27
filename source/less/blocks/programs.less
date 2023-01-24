@@ -22,7 +22,7 @@
     margin: 0;
   }
 
-  &:disabled {
+  &:active {
     opacity: 0.3;
   }
 }
@@ -39,6 +39,10 @@
   &:hover {
     border: 1px solid #bababa;
   }
+}
+
+.programs__input[type="radio"]:focus + .programs__control-mark-radio {
+  outline: 1px solid #000000;
 }
 
 .programs__input[type="radio"]:checked + .programs__control-mark-radio::before {

@@ -89,19 +89,18 @@
   }
 }
 
+.contacts__input:focus + .contacts__icon {
+  color: #68b738;
+}
+
+.contacts__input:invalid + .contacts__icon {
+  color: #ff8282;
+}
+
 .contacts__icon {
   position: absolute;
   left: calc(100% - 34px);
   color: #444444;
-
-  &:hover {
-    color: #68b738;
-    outline: 0;
-  }
-
-  &:invalid {
-    color: #ff8282;
-  }
 }
 
 /* Планшетная версия сайта */
