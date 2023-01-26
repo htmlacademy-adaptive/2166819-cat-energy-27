@@ -1,6 +1,6 @@
 .gift {
-  width: 280px;
-  height: 290px;
+  min-width: 280px;
+  min-height: 290px;
   margin: 35px auto;
 
   display: flex;
@@ -46,15 +46,14 @@
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
   .gift {
-    width: 708px;
-    height: 200px;
+    min-width: 708px;
+    min-height: 200px;
 
-    margin-bottom: 76px;
-    margin-top: 69px;
+    margin: 69px 31px 76px;
 
     background: linear-gradient(#68b738d9, #68b738d9), url("../img/cat-in-bag/cat-in-bag-tablet.jpg");
     background-repeat: no-repeat;
-    /* background-size: 708px 200px; */
+    background-position: center;
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(#68b738d9, #68b738d9), url("../img/cat-in-bag/cat-in-bag-tablet@2x.jpg");
@@ -65,7 +64,7 @@
   }
 
   .gift__description {
-    margin: 71px 124px 69px 423px;
+    margin: 71px 105px 69px 423px;
 
     text-align: start;
 
@@ -79,10 +78,9 @@
 /* Десктопная версия сайта */
 @media (min-width: @desktop-width) {
   .gift {
+    min-width: 245px;
     height: 289px;
-    margin-left: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 100px 0 80px;
     justify-content: start;
 
     background: linear-gradient(#68b738d9, #68b738d9), url("../img/cat-in-bag/cat-in-bag-desktop.jpg");

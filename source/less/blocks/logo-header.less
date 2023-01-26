@@ -1,0 +1,33 @@
+.logo-header__link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header__icon-cat-energy {
+  margin-left: 55px;
+}
+
+/* Планшетная версия сайта */
+@media (min-width: @tablet-width) {
+  .logo-header__icon-mobile {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  .logo-header__icon-cat-energy {
+    display: none;
+  }
+}
+
+/* Десктопная версия сайта */
+@media (min-width: @desktop-width) {
+  .logo-header__icon-mobile {
+    position: relative;
+    top: 10px;
+  }
+}
