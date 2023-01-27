@@ -55,6 +55,7 @@
 .nutrition-promo__text {
   position: relative;
   margin: 2px 0 0 80px;
+  min-height: 54px;
 
   &::before {
     position: absolute;
@@ -110,7 +111,7 @@
   }
 
   .nutrition-promo__list {
-    margin: 72px 83px 0 31px;
+    margin: 72px 91px 0 31px;
 
     display: flex;
     flex-wrap: wrap;
@@ -129,20 +130,14 @@
     font-size: 16px;
     line-height: 24px;
 
-    margin-bottom: 77px;
+    margin-bottom: 135px;
 
     counter-increment: count;
 
     &::before {
-      position: absolute;
-      content: "";
-
-      min-width: 60px;
-      min-height: 60px;
-
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: @foundation-color;
+      min-width: 80px;
+      min-height: 80px;
+      top: 0;
     }
 
     &::after {
@@ -163,16 +158,15 @@
     }
   }
 
-  .nutrition-promo__decor {
-    min-width: 80px;
-    min-height: 80px;
-
-    margin-bottom: 31px;
-  }
-
   .nutrition-promo__text {
-    margin-bottom: 57px;
+    margin: 0;
+    margin-top: 110px;
     width: 242px;
+
+    &::before {
+      left: 27px;
+      top: -85px;
+    }
   }
 }
 
@@ -189,7 +183,7 @@
   }
 
   .nutrition-promo__list {
-    margin: 72px 106px 0 110px;
+    margin: 72px 113px 72px 110px;
   }
 
   .nutrition-promo__item {
