@@ -65,10 +65,17 @@
   }
 }
 
-/* .data__input[type=number]::-moz-outer-spin-button,
-.data__input[type=number]::-moz-inner-spin-button {
-  -moz-appearance: none;
+/* .data__input::-webkit-outer-spin-button,
+.data__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.data__input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
 } */
+
 
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
