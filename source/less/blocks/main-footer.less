@@ -9,7 +9,7 @@
 
 /* Планшетная версия сайта */
 @media (min-width: @tablet-width) {
-  .main-footer {
+  .main-footer__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,9 @@
 
 /* Десктопная версия сайта */
 @media (min-width: @desktop-width) {
-  .main-footer {
+  .main-footer__box {
+    max-width: 1250px;
+    margin: 0 auto;
     min-height: 171px;
     padding-right: 110px;
     padding-left: 110px;

@@ -110,6 +110,19 @@
 /* Десктопная версия сайта */
 @media (min-width: @desktop-width) {
   .comment {
-    margin: 0 110px 62px 110px;
+    margin: 0 110px 33px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comment__title {
+    margin-right: 1039px;
+  }
+
+  .comment__wrapper {
+    width: 100%;
+    max-width: 1300px;
   }
 }

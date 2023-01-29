@@ -16,6 +16,7 @@
 
   font-size: 24px;
   line-height: 26px;
+  font-weight: 400;
 
   &::before {
     position: absolute;
@@ -72,8 +73,9 @@
     width: 18px;
     height: 14px;
 
-    top: 7px;
-    left: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     background-image: url("../img/check-mark.svg");
     background-repeat: no-repeat;
@@ -146,9 +148,6 @@
     width: 24px;
     height: 19px;
 
-    top: 13px;
-    left: 7px;
-
     background-size: cover;
   }
 
@@ -162,14 +161,20 @@
 @media (min-width: @desktop-width) {
   .additional-form {
     margin-bottom: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .additional-form__title {
-    margin-left: 110px;
     margin-bottom: 62px;
+    text-align: center;
+    left: -540px;
   }
 
   .additional-form__list {
+    min-width: 1060px;
     margin: 0 206px 0 170px;
 
     display: flex;
