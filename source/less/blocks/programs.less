@@ -41,9 +41,9 @@
   &:checked + .programs__control-mark-radio::before {
     position: absolute;
     content: "";
-
-    top: 8px;
-    left: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     width: 13px;
     height: 13px;
@@ -90,9 +90,6 @@
   .programs__input[type="radio"]:checked + .programs__control-mark-radio::before {
     width: 18px;
     height: 18px;
-
-    top: 9px;
-    left: 9px;
   }
 }
 

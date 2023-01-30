@@ -16,7 +16,7 @@
 </head>
 
 <body class="page-home__body">
-  <header>
+  <header class="main-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
         <div class="main-nav__logo logo-header">
@@ -52,12 +52,14 @@
   </header>
 
   <main class="main-container-form">
-    <h1 class="main-container-form__title">Подбор программы</h1>
-    <p class="main-container-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <div class="main-container-form__box-text">
+      <h1 class="main-container-form__title">Подбор программы</h1>
+      <p class="main-container-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
     <form class="main-container-form__information-group" action="https://echo.htmlacademy.ru/" method="post">
       <div class="main-container-form__wrapper">
-        <fieldset class="main-container-form__information data">
-          <legend class="visually-hidden">Личные данные вашего котика.</legend>
+        <section class="main-container-form__information data">
+          <h2 class="visually-hidden">Личные данные вашего котика.</h2>
           <ul class="data__list">
             <li class="data__item">
               <label class="data__label" for="name">имя:*</label>
@@ -74,10 +76,10 @@
               <input class="data__input" type="number" id="age" placeholder="7">
             </li>
           </ul>
-        </fieldset>
+        </section>
 
-        <fieldset class="main-container-form__information programs">
-          <legend class="visually-hidden">Выберите подходящую программу для вашего кота.</legend>
+        <section class="main-container-form__information programs">
+          <h2 class="visually-hidden">Выберите подходящую программу для вашего кота.</h2>
           <ul class="programs__list">
             <li class="programs__item">
               <label class="programs__label">
@@ -103,11 +105,11 @@
               </label>
             </li>
           </ul>
-        </fieldset>
+        </section>
       </div>
 
-      <fieldset class="main-container-form__information contacts">
-        <legend class="contacts__title">Контактные данные (владельца кота)</legend>
+      <section class="main-container-form__information contacts">
+        <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
             <label class="contacts__label" for="email">e-mail:*</label>
@@ -125,7 +127,7 @@
             </svg>
           </li>
         </ul>
-      </fieldset>
+      </section>
 
       <section class="main-container-form__comment comment">
         <h2 class="comment__title">Комментарий</h2>
@@ -134,8 +136,8 @@
         </div>
       </section>
 
-      <fieldset class="main-container-form__information additional-form">
-        <legend class="additional-form__title">Дополнительно</legend>
+      <section class="main-container-form__information additional-form">
+        <h2 class="additional-form__title">Дополнительно</h2>
         <ul class="additional-form__list">
           <li class="additional-form__item">
             <label class="additional-form__label">
@@ -169,7 +171,7 @@
             </label>
           </li>
         </ul>
-      </fieldset>
+      </section>
 
       <div class="main-container-form__button">
         <button class="main-container-form__submit" type="submit">отправить заявку</button>
@@ -192,53 +194,53 @@
   </main>
 
   <footer class="main-footer">
-    <section class="main-footer__footer logo-cat-energy">
-      <h2 class="visually-hidden">CAT ENERGY.</h2>
-      <a class="logo-cat-energy__link" href="index.html" aria-label="Перейти на главную страницу сайта catenergy.">
-        <svg class="logo-cat-energy__icon" aria-hidden="true" focusable="false"
-          role="img" width="129" height="24">
-          <use href="img/sprite.svg#cat-energy-text"></use>
-        </svg>
-      </a>
-    </section>
+    <div class="main-footer__box">
+      <section class="main-footer__footer logo-cat-energy">
+        <h2 class="visually-hidden">CAT ENERGY.</h2>
+        <a class="logo-cat-energy__link" href="index.html" aria-label="Перейти на главную страницу сайта catenergy.">
+          <svg class="logo-cat-energy__icon" aria-hidden="true" focusable="false" role="img" width="129" height="24">
+            <use href="img/sprite.svg#cat-energy-text"></use>
+          </svg>
+        </a>
+      </section>
 
-    <section class="main-footer__footer social">
-      <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте.">
-            <svg class="social__link-icon" aria-hidden="true" focusable="false" role="img" width="27"
-              height="17">
-              <use href="img/sprite.svg#vkontakte"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы в Ютубе.">
-            <svg class="social__link-icon" aria-hidden="true" focusable="false" role="img" width="24" height="19">
-              <use href="img/sprite.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy" aria-label="Мы в Телеграме.">
-            <svg class="social__link-icon" aria-hidden="true" focusable="false" role="img" width="20"
-              height="18">
-              <use href="img/sprite.svg#telegram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </section>
+      <section class="main-footer__footer social">
+        <h2 class="visually-hidden">Мы в социальных сетях.</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте.">
+              <svg class="social__link-icon" aria-hidden="true" focusable="false" role="img" width="27" height="17">
+                <use href="img/sprite.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы в Ютубе.">
+              <svg class="social__link-icon" aria-hidden="true" focusable="false" role="img" width="24" height="19">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy" aria-label="Мы в Телеграме.">
+              <svg class="social__link-icon" aria-hidden="true" focusable="false" role="img" width="20" height="18">
+                <use href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="main-footer__footer html-academy">
-      <h2 class="visually-hidden">Логотип HTML Academy.</h2>
-      <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
-        <svg class="html-academy__link-icon" aria-hidden="true" focusable="false" role="img" width="27" height="34">
-          <use href="img/sprite.svg#html-academy"></use>
-        </svg>
-      </a>
-    </section>
+      <section class="main-footer__footer html-academy">
+        <h2 class="visually-hidden">Логотип HTML Academy.</h2>
+        <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
+          <span class="html-academy__description">HTML Academy</span>
+          <svg class="html-academy__link-icon" aria-hidden="true" focusable="false" role="img" width="27" height="34">
+            <use href="img/sprite.svg#html-academy"></use>
+          </svg>
+        </a>
+      </section>
+    </div>
   </footer>
   <script src="js/script.js"></script>
 </body>

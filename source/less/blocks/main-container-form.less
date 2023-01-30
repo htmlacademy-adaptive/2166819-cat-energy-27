@@ -24,7 +24,6 @@
 }
 
 .main-container-form__information {
-  padding: 0;
   border: none;
 }
 
@@ -33,6 +32,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
 
   margin-bottom: 32px;
 }
@@ -91,6 +91,7 @@
   .main-container-form__button {
     justify-content: start;
     align-items: flex-start;
+    flex-direction: row;
 
     margin-left: 70px;
     margin-bottom: 72px;
@@ -116,26 +117,32 @@
 
 /* Десктопная версия сайта */
 @media (min-width: @desktop-width) {
+  .main-container-form__box-text {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
   .main-container-form__title {
-    margin: 80px 110px 56px 110px;
+    margin: 80px 14px 56px;
   }
 
   .main-container-form__description {
-    margin-left: 110px;
+    margin-left: 14px;
     margin-bottom: 66px;
   }
 
   .main-container-form__wrapper {
     margin: 0 110px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .main-container-form__button {
-    justify-content: start;
+    justify-content: center;
 
     margin-left: 110px;
     margin-bottom: 82px;
+    margin-right: 502px;
   }
 
   .main-container-form__submit {
